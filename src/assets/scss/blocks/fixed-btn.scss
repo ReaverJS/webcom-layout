@@ -1,0 +1,26 @@
+.fixed-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  background: rgba(76, 168, 191, 0.4);
+  z-index: 10;
+  transition: all .1s linear;
+  
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 48.18px;
+    height: 39.1px;
+  }
+
+  &:hover {
+    background: rgba(76, 168, 191, 1);
+  }
+}

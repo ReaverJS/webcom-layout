@@ -1,0 +1,50 @@
+.res-inner {
+  padding: 75px 0;
+}
+
+.res-title {
+  max-width: 814px;
+  text-align: center;
+  margin: 0 auto 52px;
+
+  font-size: 29px;
+  line-height: 40px;
+  font-weight: 500;
+
+  span {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+}
+
+.res-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.res-item {
+  padding: 46px;
+  text-align: center;
+  border-radius: 22px;
+  font-size: 45px;
+  line-height: 51px;
+  font-weight: 700;
+
+  box-shadow: 0px 16px 38px 4.1px rgba(8,15,52,0.12);
+
+  &.wide {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  span {
+    display: block;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}

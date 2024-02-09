@@ -1,0 +1,162 @@
+.case-inner {
+  padding: 73px 0 70px;
+}
+
+.case-title {
+  margin-bottom: 75px;
+
+  font-size: 44px;
+  line-height: 74px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.case-grid {
+  display: grid;
+  grid-gap: 44px 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.case-item {
+  padding: 35px;
+  max-width: 735px;
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0px 16.382px 38.226px 4.096px rgba(8, 15, 52, 0.12);
+}
+
+.case-item-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case-item-num {
+  margin-bottom: 14px;
+  font-size: 34px;
+  line-height: 74px;
+  color: #33B1CF;
+  font-weight: 700;
+}
+
+.case-item-text {
+  font-size: 29px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #001739;
+}
+
+.case-item-card {
+  background: #82CDDF;
+  border-radius: 5px;
+  min-width: 233px;
+  width: 100%;
+  max-height: 129px;
+  height: 100%;
+  position: relative;
+
+  overflow: hidden;
+
+  & + & {
+    margin-top: 28px;
+  }
+
+  /* &:hover {
+    .case-item-card-text-first {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .case-item-card-text-second {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } */
+}
+
+.case-item-card-num {
+  font-size: 59px;
+  line-height: 74px;
+  font-weight: 800;
+  font-style: italic;
+  display: flex;
+  //align-items: flex-start;
+  //transform: translate(10px, 4px);
+
+  width: 100%;
+  justify-content: center;
+
+  span {
+    margin-left: 11px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.case-item-card-text {
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  text-align: center;
+
+  &.fz34 {
+    font-size: 34px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+}
+
+.case-item-card-text-first {
+  display: block;
+  //opacity: 0;
+  //transform: translateX(15px);
+  //transition: opacity 0.7s linear, transform 0.4s ease;
+}
+
+.case-item-card-text-second {
+  display: block;
+  //opacity: 0;
+  //transform: translateX(15px);
+  //transition: opacity 0.7s linear, transform 0.5s ease;
+}
+
+.case-item-img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-item-subtext {
+  margin-top: 10px;
+
+  font-size: 26px;
+  line-height: 57px;
+  font-weight: 500;
+  color: #001739;
+  b {
+    font-weight: 700;
+  }
+}
+
+.case-item-left {
+  padding-right: 15px;
+}
+
+.case-item-card-arrow {
+  //display: block;
+  display: none;
+  
+  width: 11px;
+  height: 12px;
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+}

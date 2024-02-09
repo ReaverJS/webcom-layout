@@ -1,0 +1,33 @@
+.services-btns-inner {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 138px;
+}
+
+.services-btns-btn {
+  display: block;
+  max-width: 592px;
+  width: 100%;
+  padding: 28px 39px;
+  background: #49A1B8;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  transition: all .1s linear;
+  & + & {
+    margin-left: 44px;
+  }
+  &:hover {
+    background: darken(#49A1B8, 5);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+  }
+  &.black {
+    background: #000;
+    &:hover {
+      background: lighten(#000, 15);
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+    }
+  }
+}

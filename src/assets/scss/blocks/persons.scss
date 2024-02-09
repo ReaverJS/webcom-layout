@@ -1,0 +1,48 @@
+.persons-inner {
+  padding: 75px 0;
+}
+
+.persons-title {
+  margin-bottom: 83px;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.persons-grid {
+  display: grid;
+  grid-gap: 0 17px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.persons-item {
+  padding: 32px 35px 37px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 16px 37px 4px rgba(8,15,52,0.12);
+  border-radius: 22px;
+}
+
+.persons-item-img {
+  margin-bottom: 19px;
+  display: block;
+  max-width: 174px;
+  height: auto;
+}
+
+.persons-item-name {
+  margin-bottom: 4px;
+  font-size: 29px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.persons-item-prof {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  max-width: 210px;
+}
