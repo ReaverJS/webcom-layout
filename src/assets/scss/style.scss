@@ -28,6 +28,11 @@ body {
 /* Blocks */
 @import "blocks/container.scss";
 @import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/fixed-btn.scss";
+@import "blocks/modal.scss";
+
+// index
 @import "blocks/intro.scss";
 @import "blocks/subintro.scss";
 @import "blocks/about.scss";
@@ -36,19 +41,20 @@ body {
 @import "blocks/case.scss";
 @import "blocks/news.scss";
 @import "blocks/contacts.scss";
-@import "blocks/footer.scss";
-@import "blocks/fixed-btn.scss";
-@import "blocks/modal.scss";
 
+//about
 @import "blocks/plus.scss";
 @import "blocks/inovation.scss";
 @import "blocks/team.scss";
 @import "blocks/persons.scss";
 @import "blocks/res.scss";
 
+//services
 @import "blocks/services-intro.scss";
 @import "blocks/digital-key.scss";
 @import "blocks/services-cards.scss";
 @import "blocks/services-btns.scss";
+
+//reason
 @import "blocks/reason-intro.scss";
 @import "blocks/reasons-main.scss";
