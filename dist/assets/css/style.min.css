@@ -857,6 +857,51 @@ body.no-scroll {
   line-height: 21px;
 }
 
+@media (max-width: 767.98px) {
+  .footer .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer .footer-inner .footer-left {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-inner .footer-left .footer-left-col {
+    margin: 0;
+  }
+  .footer .footer-inner .footer-left .footer-left-col .footer-logo {
+    margin: auto auto 22px;
+    max-width: 172px;
+  }
+  .footer .footer-inner .footer-left .footer-left-col .footer-linkus {
+    font-size: 16px;
+    padding: 15px 42px;
+  }
+  .footer .footer-inner .footer-left .footer-left-col:first-child {
+    margin-bottom: 20px;
+  }
+  .footer .footer-inner .footer-right {
+    flex-direction: column;
+    margin: 0;
+  }
+  .footer .footer-inner .footer-right .footer-right-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .footer .footer-inner .footer-right .footer-right-col .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-inner .footer-right .footer-right-col .footer-nav .footer-nav-col {
+    margin: 0;
+    padding: 0;
+  }
+}
 .fixed-btn {
   position: fixed;
   right: 25px;
@@ -1139,6 +1184,60 @@ body.no-scroll {
   color: #000;
 }
 
+@media (max-width: 767.98px) {
+  .about-title {
+    font-size: 32px;
+    line-height: 27px;
+  }
+  .about-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-top .about-top-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .about-top .about-top-item .about-top-item-num {
+    font-size: 36px;
+    line-height: 47px;
+    margin: 0;
+    width: 20%;
+  }
+  .about-top .about-top-item .about-top-item-text {
+    font-size: 15px;
+    line-height: 21px;
+    width: 70%;
+    text-align: left;
+  }
+  .about-bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-bottom .about-bottom-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 170px;
+  }
+  .about-bottom .about-bottom-item .about-bottom-item:first-child {
+    margin-bottom: 10px;
+  }
+  .about-bottom .about-bottom-item .about-bottom-item-title {
+    font-size: 24px;
+    line-height: 47px;
+    margin: 0;
+  }
+  .about-bottom .about-bottom-item .about-bottom-item-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .about-bottom .about-bottom-item .about-bottom-item-link span {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 .offer-inner {
   padding: 76px 0 92px;
 }
@@ -1588,6 +1687,7 @@ body.no-scroll {
   font-size: 50px;
   line-height: 62px;
   max-width: 340px;
+  text-transform: uppercase;
 }
 .plus-title-text.mid {
   font-size: 150px;
@@ -1638,6 +1738,49 @@ body.no-scroll {
   line-height: 22px;
 }
 
+@media (max-width: 767.98px) {
+  .plus {
+    padding-bottom: 50px;
+  }
+  .plus .plus-inner {
+    padding: 0;
+  }
+  .plus .plus-inner .plus-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  .plus .plus-inner .plus-title .plus-title-text {
+    text-transform: initial;
+  }
+  .plus .plus-inner .plus-title .plus-title-text.first {
+    font-size: 36px;
+    line-height: 42px;
+    transform: none;
+    margin-bottom: 15px;
+  }
+  .plus .plus-inner .plus-title .plus-title-text.mid {
+    font-size: 100px;
+    margin-bottom: 15px;
+  }
+  .plus .plus-inner .plus-title .plus-title-text.last {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0;
+  }
+  .plus .plus-inner .plus-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+  }
+  .plus .plus-inner .plus-grid .plus-item .plus-item-num {
+    font-size: 38px;
+  }
+  .plus .plus-inner .plus-grid .plus-item .plus-item-text {
+    font-size: 14px;
+  }
+}
 .inovation-inner {
   padding: 168px 0 74px;
 }
@@ -1674,6 +1817,25 @@ body.no-scroll {
   box-shadow: 0px 14px 32px 0px rgba(8, 15, 52, 0.12);
 }
 
+@media (max-width: 767.98px) {
+  .inovation .inovation-inner {
+    padding: 50px 0 0;
+  }
+  .inovation .inovation-inner .inovation-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .inovation .inovation-inner .inovation-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .inovation .inovation-inner .inovation-grid .inovation-item {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    padding: 20px;
+  }
+}
 .team-inner {
   padding: 74px 0;
 }
@@ -1726,6 +1888,36 @@ body.no-scroll {
   font-weight: 500;
 }
 
+@media (max-width: 767.98px) {
+  .team .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .team .team-grid .team-item {
+    padding: 24px 16px;
+    text-align: left;
+  }
+  .team .team-grid .team-item .team-item-title {
+    font-size: 24px;
+    line-height: 47px;
+    margin: 0;
+  }
+  .team .team-grid .team-item .team-item-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .team .team-title span {
+    font-size: 32px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  .team .team-title p {
+    font-size: 18px;
+    line-height: 27px;
+    margin: auto;
+    max-width: 85%;
+  }
+}
 .persons-inner {
   padding: 75px 0;
 }
@@ -1821,6 +2013,40 @@ body.no-scroll {
   font-weight: 500;
 }
 
+@media (max-width: 767.98px) {
+  .res .res-inner {
+    padding: 0;
+  }
+  .res .res-inner .res-title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .res .res-inner .res-title span {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  .res .res-inner .res-grid {
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .res .res-inner .res-grid.wide {
+    grid-column: initial;
+  }
+  .res .res-inner .res-grid .res-item {
+    padding: 24px 16px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .res .res-inner .res-grid .res-item br {
+    display: none;
+  }
+  .res .res-inner .res-grid .res-item span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
 .services-intro {
   position: relative;
   background: #82CDDF;

@@ -18,6 +18,7 @@
   font-size: 50px;
   line-height: 62px;
   max-width: 340px;
+  text-transform: uppercase;
 
   &.mid {
     font-size: 150px;
@@ -71,4 +72,60 @@
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
+}
+
+@media (max-width:767.98px) {
+  .plus {
+    padding-bottom: 50px;
+    .plus-inner {
+      padding:0;
+
+      .plus-title {
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        margin:0;
+        padding:40px 20px;
+
+        .plus-title-text {
+          text-transform: initial;
+        }
+
+        .plus-title-text.first {
+          font-size:36px;
+          line-height: 42px;
+          transform: none;
+          margin-bottom: 15px;
+        }
+
+        .plus-title-text.mid {
+          font-size:100px;
+          //line-height: 43px;
+          margin-bottom: 15px;
+        }
+
+        .plus-title-text.last {
+          font-size:36px;
+          line-height: 42px;
+          margin:0;
+        }
+      }
+
+      .plus-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding:30px;
+
+        .plus-item {
+
+          .plus-item-num {
+            font-size:38px;
+          }
+
+          .plus-item-text {
+            font-size:14px;
+          }
+        }
+      }
+    }
+  }
 }
