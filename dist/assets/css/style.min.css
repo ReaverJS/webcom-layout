@@ -709,12 +709,14 @@ body.no-scroll {
 
 .footer-inner {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 66px 0 73px;
 }
 
 .footer-left {
   display: flex;
+  align-items: flex-end;
   padding-right: 60px;
 }
 
@@ -723,7 +725,6 @@ body.no-scroll {
 }
 
 .footer-logo {
-  margin-bottom: 22px;
   max-width: 197px;
   height: auto;
   display: block;
@@ -731,7 +732,7 @@ body.no-scroll {
 
 .footer-linkus {
   display: inline-block;
-  padding: 22px 42px;
+  padding: 22px 30px;
   background: #000;
   border-radius: 12px;
   color: #fff;
@@ -739,6 +740,7 @@ body.no-scroll {
   font-weight: 700;
   text-decoration: none;
   font-family: "Roboto Flex", sans-serif;
+  text-align: center;
   transition: all 0.1s linear;
 }
 .footer-linkus:hover {
@@ -755,9 +757,22 @@ body.no-scroll {
   font-weight: 700;
 }
 
+.footer-socials-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+  padding-top: 49px;
+}
+.footer-socials-flex .footer-socials-link {
+  margin-right: 20px;
+}
+.footer-socials-flex .footer-socials-link:last-child {
+  margin-right: 0;
+}
+
 .footer-socials {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   margin-bottom: 20px;
 }
@@ -778,11 +793,13 @@ body.no-scroll {
 }
 
 .footer-copyright {
+  display: block;
   color: #343434;
   text-decoration: underline;
   font-size: 18px;
   line-height: 21px;
   transition: all 0.1s linear;
+  margin-bottom: 20px;
 }
 .footer-copyright:hover {
   text-decoration: none;
@@ -791,6 +808,7 @@ body.no-scroll {
 
 .footer-right {
   display: flex;
+  margin-bottom: 14px;
 }
 
 .footer-right-col + .footer-right-col {
@@ -1829,7 +1847,7 @@ body.no-scroll {
 .services-intro-left {
   width: 50%;
   padding-top: 50px;
-  padding-right: 116px;
+  padding-right: 100px;
 }
 
 .services-intro-suptext {
@@ -1846,7 +1864,7 @@ body.no-scroll {
 }
 
 .services-intro-title {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 67px;
   font-weight: 700;
 }
