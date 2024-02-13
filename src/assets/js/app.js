@@ -2,27 +2,104 @@ AOS.init();
 
 // Slider
 var swiper = new Swiper(".news-swiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 32,
   centeredSlides: true,
   grabCursor: true,
-  loop: true,
+  loop: false,
   pagination: {
     el: ".news-swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".news-swiper-pagination-button--right",
+    prevEl: ".news-swiper-pagination-button--left",
+  },
+  breakpoints: {
+    930: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+      loop: true,
+    },
+  }
 })
 
 var swiper = new Swiper(".trust-swiper", {
-  slidesPerView: 5,
-  spaceBetween: 38,
+  slidesPerView: 2.2,
+  spaceBetween: 12,
   grabCursor: true,
   loop: false,
-  slidesPerGroup: 5,
+  slidesPerGroup: 2,
   watchOverflow: true,
   autoplay: {
     delay: 5000,
   },
+  breakpoints: {
+    930: {
+      slidesPerView: 5,
+      spaceBetween: 38,
+      slidesPerGroup: 5,
+      watchOverflow: true,
+    },
+  }
+})
+
+var swiper = new Swiper(".subtintro-swiper", {
+  slidesPerView: 2.1,
+  spaceBetween: 12,
+  grabCursor: true,
+  loop: false,
+  slidesPerGroup: 3,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 12,
+    },
+  }
+})
+
+var swiper = new Swiper(".offer-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 36,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".offer-swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".offer-swiper-button--right",
+    prevEl: ".offer-swiper-button--left",
+  },
+})
+
+var swiper = new Swiper(".case-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 36,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".case-swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".case-swiper-pagination-button--right",
+    prevEl: ".case-swiper-pagination-button--left",
+  }
 })
 
 // Map

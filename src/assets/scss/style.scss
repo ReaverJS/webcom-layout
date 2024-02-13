@@ -10,13 +10,17 @@ body {
   color: $black;
 
   &.no-scroll {
-    overflow: hidden;
+    //overflow: hidden;
     padding-right: 15px;
   }
 }
 
 .page {
   overflow: hidden;
+
+  @media(max-width: 930px) {
+    padding-top: 65.06px;
+  }
 }
 
 *,
@@ -28,7 +32,11 @@ body {
 /* Blocks */
 @import "blocks/container.scss";
 @import "blocks/header.scss";
+@import "blocks/header-mob.scss";
+@import "blocks/burger.scss";
+@import "blocks/sidebar.scss";
 @import "blocks/footer.scss";
+@import "blocks/footer-mob.scss";
 @import "blocks/fixed-btn.scss";
 @import "blocks/modal.scss";
 

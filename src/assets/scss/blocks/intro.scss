@@ -29,12 +29,22 @@
 
 .intro-inner {
   padding: 200px 0 290px;
+
+  @media(max-width: 930px) {
+    padding: 60px 0 180px;
+  }
 }
 
 .intro-info {
   max-width: 570px;
   margin-left: 68px;
   text-align: center;
+
+  @media(max-width: 930px) {
+    max-width: none;
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .intro-title {
@@ -42,6 +52,12 @@
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
+
+  @media(max-width: 930px) {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 24px;
+  }
 }
 
 .intro-subtitlte {
@@ -65,6 +81,13 @@
   &:hover {
     background: darken($white, 5);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+  }
+
+  @media(max-width: 930px) {
+    padding: 9px;
+    min-width: 227px;
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 

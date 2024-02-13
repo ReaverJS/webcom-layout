@@ -1,0 +1,49 @@
+.header-mob {
+  display: none;
+  box-shadow: 0px 4.16px 31.2px 0px rgba(0, 0, 0, 0.10), 0px 1.04px 3.12px 0px rgba(0, 0, 0, 0.05);
+
+  @media(max-width: 930px) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1001;
+  }
+}
+
+.header-mob-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 16px;
+}
+
+.header-mob-logo {
+  display: block;
+  width: 129px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.header-mob-group {
+  display: flex;
+  align-items: center;
+}
+
+.header-mob-linkus {
+  margin-right: 18px;
+  padding: 7px 12px;
+  background: #82CDDF;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+}

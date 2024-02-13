@@ -1,5 +1,9 @@
 .contacts-inner {
   padding: 49px 0 130px;
+
+  @media(max-width: 930px) {
+    padding: 60px 0;
+  }
 }
 
 .contacts-title {
@@ -8,6 +12,13 @@
   line-height: 74px;
   text-align: center;
   font-weight: 700;
+
+  @media(max-width: 930px) {
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+  }
 }
 
 .contacts-map {
@@ -19,6 +30,10 @@
   box-shadow: 0px 42px 92px 0px rgba(0, 0, 0, 0.10), 0px 167px 167px 0px rgba(0, 0, 0, 0.09), 0px 1045px 293px 0px rgba(0, 0, 0, 0.00);
   border-radius: 26px;
   overflow: hidden;
+
+  @media(max-width: 930px) {
+    height: 500px;
+  }
 }
 
 [class*="copyrights-pane"] {

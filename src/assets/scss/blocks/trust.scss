@@ -1,5 +1,9 @@
 .trust-inner {
   padding: 92px 0 73px;
+
+  @media(max-width: 930px) {
+    padding: 60px 0;
+  }
 }
 
 .trust-title {
@@ -8,6 +12,12 @@
   line-height: 74px;
   font-weight: 700;
   text-align: center;
+
+  @media(max-width: 930px) {
+    margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 1;
+  }
 }
 
 /* .trust-grid {
@@ -33,11 +43,19 @@
     height: auto;
     transform: scale(1.1);
   }
+
+  @media(max-width: 930px) {
+    height: 100px;
+  }
 }
 
 .trust-bottom {
   margin-top: 45px;
   text-align: center;
+
+  @media(max-width: 930px) {
+    margin-top: 28px;
+  }
 }
 
 .trust-link {
@@ -56,5 +74,10 @@
     opacity: 1;
     background: darken(#49A1B8, 5);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+  }
+
+  @media(max-width: 930px) {
+    font-size: 16px;
+    padding: 10px 80px;
   }
 }
