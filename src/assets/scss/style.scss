@@ -10,7 +10,7 @@ body {
   color: $black;
 
   &.no-scroll {
-    //overflow: hidden;
+    overflow: hidden;
     padding-right: 15px;
   }
 }

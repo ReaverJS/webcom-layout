@@ -39,3 +39,20 @@
 [class*="copyrights-pane"] {
 	display: none !important;
 }
+
+.contacts-btns {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-btn {
+  display: block;
+  padding: 13px 18px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 42px 92px 0px rgba(0, 0, 0, 0.10), 0px 167px 167px 0px rgba(0, 0, 0, 0.09), 0px 1045px 293px 0px rgba(0, 0, 0, 0.00);
+  & + & {
+    margin-left: 12px;
+  }
+}

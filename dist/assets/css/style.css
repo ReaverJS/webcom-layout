@@ -2169,6 +2169,7 @@ body.no-scroll {
 @media (max-width: 930px) {
     .trust-item {
         height: 100px;
+        overflow: hidden;
     }
 }
 

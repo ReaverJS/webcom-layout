@@ -25,7 +25,7 @@ var swiper = new Swiper(".news-swiper", {
 })
 
 var swiper = new Swiper(".trust-swiper", {
-  slidesPerView: 2.2,
+  slidesPerView: 2,
   spaceBetween: 12,
   grabCursor: true,
   loop: false,
@@ -45,7 +45,7 @@ var swiper = new Swiper(".trust-swiper", {
 })
 
 var swiper = new Swiper(".subtintro-swiper", {
-  slidesPerView: 2.1,
+  slidesPerView: 2,
   spaceBetween: 12,
   grabCursor: true,
   loop: false,
@@ -59,7 +59,7 @@ var swiper = new Swiper(".subtintro-swiper", {
       slidesPerView: 3,
       spaceBetween: 12,
     },
-  }
+  },
 })
 
 var swiper = new Swiper(".offer-swiper", {

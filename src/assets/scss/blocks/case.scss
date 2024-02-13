@@ -195,7 +195,6 @@
   @media(max-width: 930px) {
     display: block;
     position: relative;
-    padding: 0 34px;
   }
 }
 
@@ -273,7 +272,7 @@
   }
 }
 
-.case-swiper-pagination-button {
+/* .case-swiper-pagination-button {
   position: absolute;
   top: calc(50% - 24px);
   transform: translateY(-50%);
@@ -289,7 +288,7 @@
   &.case-swiper-pagination-button--right {
     right: 2px;
   }
-}
+} */
 
 .case-swiper-pagination {
   display: flex;

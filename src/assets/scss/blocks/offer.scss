@@ -136,7 +136,6 @@
   display: none;
   @media(max-width: 930px) {
     display: block;
-    padding: 0 34px;
     position: relative;
   }
 }
@@ -175,7 +174,7 @@
   line-height: 20px;
 }
 
-.offer-swiper-button {
+/* .offer-swiper-button {
   position: absolute;
   top: calc(50% - 24px);
   transform: translateY(-50%);
@@ -191,7 +190,7 @@
   &.offer-swiper-button--right {
     right: 2px;
   }
-}
+} */
 
 .offer-swiper-pagination {
   display: flex;

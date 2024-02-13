@@ -18,9 +18,11 @@ function showSidebar() {
   page.appendChild(mask); */
 
   body.classList.add('show-sidebar');
+  body.classList.add('no-scroll');
 }
 
 function closeSidebar() {
   body.classList.remove('show-sidebar');
+  body.classList.remove('no-scroll');
   //document.querySelector('.page__mask').remove();
 }
