@@ -2486,7 +2486,7 @@ body.no-scroll {
     border-radius: 16px;
     box-shadow: 0px 16.382px 38.226px 4.096px rgba(8, 15, 52, 0.12);
     background: #fff;
-    min-height: 409px;
+    min-height: 436px;
 }
 
 .case-swiper-item-num {
@@ -2528,6 +2528,12 @@ body.no-scroll {
     min-height: 155px;
 }
 
+.case-swiper-item-card.wide {
+    width: 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .case-swiper-item-card-text {
     margin-bottom: 16px;
     font-size: 16px;
@@ -2541,6 +2547,7 @@ body.no-scroll {
 }
 
 .case-swiper-item-card-num {
+    display: block;
     font-size: 22px;
     line-height: 1;
     font-weight: 600;
@@ -2548,6 +2555,10 @@ body.no-scroll {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    text-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .case-swiper-item-card-num span {

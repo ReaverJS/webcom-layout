@@ -82,3 +82,21 @@
     padding: 10px 80px;
   }
 }
+
+.trust-swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px;
+  height: 13px;
+
+  .swiper-pagination-bullet {
+    background: #82CDDF;
+    transition: all .1s linear;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 13px;
+    width: 13px;
+  }
+}

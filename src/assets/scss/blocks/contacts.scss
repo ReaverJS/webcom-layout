@@ -32,7 +32,7 @@
   overflow: hidden;
 
   @media(max-width: 930px) {
-    height: 500px;
+    height: 300px;
   }
 }
 
@@ -55,4 +55,8 @@
   & + & {
     margin-left: 12px;
   }
+}
+
+.leaflet-popup {
+  display: none!important;
 }

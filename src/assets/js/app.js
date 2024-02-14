@@ -41,6 +41,10 @@ var swiper = new Swiper(".trust-swiper", {
       slidesPerGroup: 5,
       watchOverflow: true,
     },
+  },
+  pagination: {
+    el: ".trust-swiper-pagination",
+    clickable: true,
   }
 })
 
@@ -60,6 +64,10 @@ var swiper = new Swiper(".subtintro-swiper", {
       spaceBetween: 12,
     },
   },
+  pagination: {
+    el: ".subtintro-swiper-pagination",
+    clickable: true,
+  }
 })
 
 var swiper = new Swiper(".offer-swiper", {
