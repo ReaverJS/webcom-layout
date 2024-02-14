@@ -69,9 +69,9 @@ var swiper = new Swiper(".offer-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
+  /* autoplay: {
     delay: 5000,
-  },
+  }, */
   pagination: {
     el: ".offer-swiper-pagination",
     clickable: true,

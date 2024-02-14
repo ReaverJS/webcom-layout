@@ -450,6 +450,7 @@ body {
 }
 
 body.no-scroll {
+    overflow: hidden;
     padding-right: 15px;
 }
 
@@ -1490,6 +1491,13 @@ body.no-scroll {
     object-fit: cover;
 }
 
+@media (max-width: 930px) {
+    .intro-bg {
+        -o-object-position: 75%;
+        object-position: 75%;
+    }
+}
+
 .intro-inner {
     padding: 200px 0 290px;
 }
@@ -2027,7 +2035,6 @@ body.no-scroll {
 @media (max-width: 930px) {
     .offer-swiper {
         display: block;
-        padding: 0 34px;
         position: relative;
     }
 }
@@ -2069,26 +2076,23 @@ body.no-scroll {
     line-height: 20px;
 }
 
-.offer-swiper-button {
-    position: absolute;
-    top: calc(50% - 24px);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 12px 7px;
-    border-radius: 8px;
-    border: none;
-    background: #fff;
-    z-index: 1;
-}
+/* .offer-swiper-button {
+  position: absolute;
+  top: calc(50% - 24px);
+  transform: translateY(-50%);
+  padding: 12px 7px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  z-index: 1;
 
-.offer-swiper-button.offer-swiper-button--left {
+  &.offer-swiper-button--left {
     left: 2px;
-}
-
-.offer-swiper-button.offer-swiper-button--right {
+  }
+  &.offer-swiper-button--right {
     right: 2px;
-}
-
+  }
+} */
 .offer-swiper-pagination {
     display: -ms-flexbox;
     display: flex;
@@ -2414,7 +2418,6 @@ body.no-scroll {
     .case-swiper {
         display: block;
         position: relative;
-        padding: 0 34px;
     }
 }
 
@@ -2503,26 +2506,23 @@ body.no-scroll {
     font-weight: 800;
 }
 
-.case-swiper-pagination-button {
-    position: absolute;
-    top: calc(50% - 24px);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 12px 7px;
-    border-radius: 8px;
-    border: none;
-    background: #fff;
-    z-index: 1;
-}
+/* .case-swiper-pagination-button {
+  position: absolute;
+  top: calc(50% - 24px);
+  transform: translateY(-50%);
+  padding: 12px 7px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  z-index: 1;
 
-.case-swiper-pagination-button.case-swiper-pagination-button--left {
+  &.case-swiper-pagination-button--left {
     left: 2px;
-}
-
-.case-swiper-pagination-button.case-swiper-pagination-button--right {
+  }
+  &.case-swiper-pagination-button--right {
     right: 2px;
-}
-
+  }
+} */
 .case-swiper-pagination {
     display: -ms-flexbox;
     display: flex;
@@ -2567,7 +2567,6 @@ body.no-scroll {
 @media (max-width: 930px) {
     .news-swiper {
         position: relative;
-        padding: 0 34px;
     }
 }
 
@@ -2696,33 +2695,28 @@ body.no-scroll {
     }
 }
 
-.news-swiper-pagination-button {
-    display: none;
-    position: absolute;
-    top: calc(50% - 24px);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 12px 7px;
-    border-radius: 8px;
-    border: none;
-    background: #fff;
-    z-index: 1;
-}
+/* .news-swiper-pagination-button {
+  display: none;
+  position: absolute;
+  top: calc(50% - 24px);
+  transform: translateY(-50%);
+  padding: 12px 7px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  z-index: 1;
 
-.news-swiper-pagination-button.news-swiper-pagination-button--left {
+  &.news-swiper-pagination-button--left {
     left: 2px;
-}
-
-.news-swiper-pagination-button.news-swiper-pagination-button--right {
+  }
+  &.news-swiper-pagination-button--right {
     right: 2px;
-}
+  }
 
-@media (max-width: 930px) {
-    .news-swiper-pagination-button {
-        display: block;
-    }
-}
-
+  @media(max-width: 930px) {
+    display: block;
+  }
+} */
 .contacts-inner {
     padding: 49px 0 130px;
 }
@@ -2768,6 +2762,26 @@ body.no-scroll {
 
 [class*=copyrights-pane] {
     display: none !important;
+}
+
+.contacts-btns {
+    margin-top: 28px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contacts-btn {
+    display: block;
+    padding: 13px 18px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 42px 92px 0px rgba(0, 0, 0, 0.1), 0px 167px 167px 0px rgba(0, 0, 0, 0.09), 0px 1045px 293px 0px rgba(0, 0, 0, 0);
+}
+
+.contacts-btn + .contacts-btn {
+    margin-left: 12px;
 }
 
 .plus {
