@@ -2040,40 +2040,92 @@ body.no-scroll {
 }
 
 .offer-swiper-item {
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    height: 350px;
+    position: relative;
+}
+
+.offer-swiper-item-side {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 32px 10px 60px;
-    min-height: 345px;
-    background: #fff;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 11.6653385162px 27.2191238403px 2.9163346291px rgba(8, 15, 52, 0.12);
-    border-radius: 16px;
+    border-radius: 20px;
+}
+
+.offer-swiper-item-front {
+    z-index: 1;
+    background: #fff;
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.offer-swiper-item-back {
+    z-index: 0;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-color: #82CDDF;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.offer-swiper-item:hover .offer-swiper-item-front, .offer-swiper-item:focus .offer-swiper-item-front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 0;
+}
+
+.offer-swiper-item:hover .offer-swiper-item-back, .offer-swiper-item:focus .offer-swiper-item-back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    z-index: 1;
 }
 
 .offer-swiper-item-img {
     display: block;
-    width: 124px;
-    height: 124px;
+    width: 154px;
+    height: 154px;
     -o-object-fit: contain;
     object-fit: contain;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
+}
+
+.offer-swiper-item-img.special {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 46px;
 }
 
 .offer-swiper-item-title {
-    margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 29px;
     font-weight: 600;
 }
 
 .offer-swiper-item-text {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.3;
+    text-align: center;
 }
 
 /* .offer-swiper-button {

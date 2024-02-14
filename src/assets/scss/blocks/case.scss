@@ -207,7 +207,7 @@
   border-radius: 16px;
   box-shadow: 0px 16.382px 38.226px 4.096px rgba(8, 15, 52, 0.12);
   background: #fff;
-  min-height: 409px;
+  min-height: 436px;
 }
 
 .case-swiper-item-num {
@@ -242,6 +242,11 @@
   border-radius: 12px;
   background: #82CDDF;
   min-height: 155px;
+
+  &.wide {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .case-swiper-item-card-text {
@@ -257,11 +262,15 @@
 }
 
 .case-swiper-item-card-num {
+  display: block;
   font-size: 22px;
   line-height: 1;
   font-weight: 600;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 
   span {
     font-size: 40px;
