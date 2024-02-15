@@ -477,6 +477,21 @@ body.no-scroll {
   box-sizing: border-box;
 }
 
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 /* Blocks */
 .container {
   max-width: 1546px;
@@ -1249,7 +1264,7 @@ body.no-scroll {
 .fixed-btn {
   position: fixed;
   right: 25px;
-  bottom: 20px;
+  bottom: 65px;
   width: 70px;
   height: 70px;
   display: block;
