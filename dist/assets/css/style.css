@@ -1398,7 +1398,7 @@ body.no-scroll {
 .fixed-btn {
     position: fixed;
     right: 25px;
-    bottom: 20px;
+    bottom: 65px;
     width: 70px;
     height: 70px;
     display: block;
