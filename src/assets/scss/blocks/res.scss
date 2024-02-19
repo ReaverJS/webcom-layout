@@ -1,5 +1,9 @@
 .res-inner {
   padding: 75px 0;
+
+  @media(max-width: 930px) {
+    padding: 40px 0;
+  }
 }
 
 .res-title {
@@ -18,12 +22,30 @@
     line-height: 60px;
     font-weight: 700;
   }
+
+  @media(max-width: 930px) {
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    span {
+      margin-bottom: 28px;
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 600;
+    }
+  }
 }
 
 .res-grid {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
+
+  @media(max-width: 930px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+  }
 }
 
 .res-item {
@@ -46,5 +68,22 @@
     font-size: 25px;
     line-height: 1.4;
     font-weight: 500;
+  }
+
+  @media(max-width: 930px) {
+    padding: 24px 16px;
+
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    span {
+      font-size: 15px;
+      line-height: 21px;
+      margin-top: 10px;
+    }
+    &.wide {
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
   }
 }

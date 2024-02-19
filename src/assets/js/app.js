@@ -110,6 +110,54 @@ var swiper = new Swiper(".case-swiper", {
   }
 })
 
+var swiper = new Swiper(".plus-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".plus-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".inovation-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".inovation-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".persons-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".persons-swiper-pagination",
+    clickable: true,
+  },
+})
+
 // Map
 function init() {
   let map = new ymaps.Map('contacts-map', {
