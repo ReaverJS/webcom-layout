@@ -128,7 +128,7 @@ var swiper = new Swiper(".plus-swiper", {
 
 var swiper = new Swiper(".inovation-swiper", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 50,
   grabCursor: true,
   loop: true,
   slidesPerGroup: 1,
@@ -144,7 +144,7 @@ var swiper = new Swiper(".inovation-swiper", {
 
 var swiper = new Swiper(".persons-swiper", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 50,
   grabCursor: true,
   loop: true,
   slidesPerGroup: 1,
