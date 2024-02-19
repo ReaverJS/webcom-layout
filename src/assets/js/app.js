@@ -112,7 +112,7 @@ var swiper = new Swiper(".case-swiper", {
 
 var swiper = new Swiper(".plus-swiper", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 50,
   grabCursor: true,
   loop: true,
   slidesPerGroup: 1,
