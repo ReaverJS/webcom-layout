@@ -7,6 +7,9 @@ var swiper = new Swiper(".news-swiper", {
   centeredSlides: true,
   grabCursor: true,
   loop: false,
+  autoplay: {
+    delay: 10000,
+  },
   pagination: {
     el: ".news-swiper-pagination",
     clickable: true,
@@ -70,6 +73,7 @@ var swiper = new Swiper(".subtintro-swiper", {
   }
 })
 
+const offerSwiperItems = document.querySelectorAll('.offer-swiper-item')
 var swiper = new Swiper(".offer-swiper", {
   slidesPerView: 1,
   spaceBetween: 36,
@@ -78,7 +82,7 @@ var swiper = new Swiper(".offer-swiper", {
   slidesPerGroup: 1,
   watchOverflow: true,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
   },
   pagination: {
     el: ".offer-swiper-pagination",
@@ -87,6 +91,11 @@ var swiper = new Swiper(".offer-swiper", {
   navigation: {
     nextEl: ".offer-swiper-button--right",
     prevEl: ".offer-swiper-button--left",
+  },
+  on: {
+    slideChange: function () {
+      offerSwiperItems.forEach((i) => i.classList.remove('flipped'))
+    },
   },
 })
 
@@ -98,7 +107,7 @@ var swiper = new Swiper(".case-swiper", {
   slidesPerGroup: 1,
   watchOverflow: true,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
   },
   pagination: {
     el: ".case-swiper-pagination",
@@ -118,7 +127,7 @@ var swiper = new Swiper(".plus-swiper", {
   slidesPerGroup: 1,
   watchOverflow: true,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
   },
   pagination: {
     el: ".plus-swiper-pagination",
@@ -134,7 +143,7 @@ var swiper = new Swiper(".inovation-swiper", {
   slidesPerGroup: 1,
   watchOverflow: true,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
   },
   pagination: {
     el: ".inovation-swiper-pagination",
@@ -157,6 +166,71 @@ var swiper = new Swiper(".persons-swiper", {
     clickable: true,
   },
 })
+
+var swiper = new Swiper(".reason-intro-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".reason-intro-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".reasons-main-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".reasons-main-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".services-cards-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".services-cards-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".services-cards-swiper2", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".services-cards-swiper-pagination2",
+    clickable: true,
+  },
+})
+
 
 // Map
 function init() {

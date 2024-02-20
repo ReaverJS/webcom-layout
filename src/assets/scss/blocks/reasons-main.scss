@@ -1,5 +1,15 @@
 .reasons-main-inner {
   padding: 150px 0 113px;
+
+  @media(max-width: 930px) {
+    padding: 60px 0;
+  }
+}
+
+.reasons-main-cards {
+  @media(max-width: 930px) {
+    display: none;
+  }
 }
 
 .reasons-main-card {
@@ -11,11 +21,21 @@
   & + & {
     margin-top: 60px;
   }
+
+  @media(max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .reasons-main-card-info {
   width: 50%;
   padding-right: 45px;
+
+  @media(max-width: 1200px) {
+    width: 100%;
+    padding-right: 0;
+    margin-top: 20px;
+  }
 }
 
 .reasons-main-card-title {
@@ -30,6 +50,10 @@
   font-weight: 700;
   padding: 10px 34px;
   margin-bottom: 40px;
+
+  @media(max-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .reasons-main-card-text {
@@ -74,10 +98,98 @@
 .reasons-main-card-preview {
   width: 50%;
   padding-left: 29px;
+
+  @media(max-width: 1200px) {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .reasons-main-card-img {
   display: block;
-  max-width: 690px;
+  max-width: 100%;
   height: auto;
+
+  @media(max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.reasons-main-swiper {
+  display: none;
+
+  @media(max-width: 930px) {
+    display: block;
+    position: relative;
+  }
+}
+
+.reasons-main-swiper-item {
+  padding: 16px 16px 24px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 16px 38px 4.1px rgba(8,15,52,0.12);
+  min-height: 689px;
+}
+
+.reasons-main-swiper-item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.reasons-main-swiper-item-title {
+  display: flex;
+  align-items: center;
+  min-height: 49px;
+  background: #82CDDF;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.reasons-main-swiper-item-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.reasons-main-swiper-item-text-big {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.reasons-main-swiper-item-list {
+  list-style: disc;
+  padding-left: 20px;
+  li {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+}
+
+.reasons-main-swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px;
+  height: 13px;
+
+  .swiper-pagination-bullet {
+    background: #82CDDF;
+    transition: all .1s linear;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 13px;
+    width: 13px;
+  }
 }

@@ -1,6 +1,7 @@
 .footer-mob {
   display: none;
   background: #fff;
+  border-top: 5px solid #bfdae1;
 
   @media(max-width: 930px) {
     display: block;
@@ -9,7 +10,7 @@
 }
 
 .footer-mob-inner {
-  padding: 80px 30px 40px;
+  padding: 40px 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

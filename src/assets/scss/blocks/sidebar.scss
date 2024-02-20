@@ -19,11 +19,11 @@
   @media (max-width: 930px) {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 90px);
     padding-bottom: 1.5rem;
     overflow: auto;
 
-    top: 65px;
+    top: 90px;
 
     transform: translateX(-100%);
     transition: transform .2s linear;
@@ -49,13 +49,17 @@
     font-weight: 700;
     line-height: 24px;
     text-decoration: none;
+    position: relative;
   }
 
   img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -24px;
     display: block;
     max-width: 12px;
     height: auto;
-    margin-left: 6px;
   }
 }
 
