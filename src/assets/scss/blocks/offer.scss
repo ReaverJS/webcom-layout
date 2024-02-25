@@ -211,12 +211,12 @@
 .offer-swiper-item-title {
   font-size: 30px;
   line-height: 29px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .offer-swiper-item-text {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 1.3;
   text-align: center;
 }
@@ -257,4 +257,13 @@
     height: 13px;
     background: #82CDDF;
   }
+}
+
+.offer-swiper-item-arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  width: 12px;
+  height: 13px;
 }

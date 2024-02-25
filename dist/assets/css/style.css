@@ -451,7 +451,6 @@ body {
 
 body.no-scroll {
     overflow: hidden;
-    padding-right: 15px;
 }
 
 .page {
@@ -947,6 +946,7 @@ body.no-scroll {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    overflow-y: scroll;
 }
 
 @media (max-width: 930px) {
@@ -1011,6 +1011,11 @@ body.no-scroll {
     background: inherit;
     border: none;
     font-family: "Roboto Flex", sans-serif;
+    padding: 20px 0;
+}
+
+.header-mob-socials {
+    margin-bottom: 80px;
 }
 
 .header-mob-socials-group {

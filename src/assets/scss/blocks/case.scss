@@ -236,7 +236,7 @@
 .case-swiper-item-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: calc(50% - 4px);
   padding: 20px 10px;
   border-radius: 12px;
@@ -250,7 +250,7 @@
 }
 
 .case-swiper-item-card-text {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-size: 20px;
   line-height: 22px;
   text-align: center;
