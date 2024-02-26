@@ -150,6 +150,7 @@
 
 .header-main-nav-item {
   display: flex;
+  position: relative;
   & + & {
     margin-left: 45px;
   }
@@ -177,6 +178,24 @@
       margin-left: 5px;
     }
   }
+  &:hover {
+    .header-main-nav-item-submenu {
+      display: block;
+    }
+  }
+}
+
+.header-main-nav-item-submenu {
+  position: absolute;
+  padding: 16px;
+  background: #fff;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 2px 3px 0 rgba(189,189,189,.44);
+  bottom: -50px;
+  right: 0;
+  z-index: 1;
+  display: none;
 }
 
 .header-main-cabinet {
