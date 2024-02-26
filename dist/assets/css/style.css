@@ -664,6 +664,7 @@ body.no-scroll {
 .header-main-nav-item {
     display: -ms-flexbox;
     display: flex;
+    position: relative;
 }
 
 .header-main-nav-item + .header-main-nav-item {
@@ -694,6 +695,23 @@ body.no-scroll {
     .header-main-nav-item img {
         margin-left: 5px;
     }
+}
+
+.header-main-nav-item:hover .header-main-nav-item-submenu {
+    display: block;
+}
+
+.header-main-nav-item-submenu {
+    position: absolute;
+    padding: 16px;
+    background: #fff;
+    border-radius: 6px;
+    width: 250px;
+    box-shadow: 0 2px 3px 0 rgba(189, 189, 189, 0.44);
+    bottom: -50px;
+    right: 0;
+    z-index: 1;
+    display: none;
 }
 
 .header-main-cabinet {
@@ -972,13 +990,14 @@ body.no-scroll {
     }
 }
 
+/* .sidebar-nav-list {
+  display: flex;
+  flex-direction: column;
+} */
 .sidebar-nav-item {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    width: 250px;
+    text-align: center;
+    position: relative;
 }
 
 .sidebar-nav-item + .sidebar-nav-item {
@@ -1003,6 +1022,25 @@ body.no-scroll {
     display: block;
     max-width: 12px;
     height: auto;
+}
+
+.sidebar-nav-item:hover .sidebar-nav-item-submenu {
+    display: block;
+}
+
+.sidebar-nav-item-submenu {
+    position: absolute;
+    width: 250px;
+    padding: 16px;
+    background: #fff;
+    bottom: -53px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    box-shadow: 0 2px 3px 0 rgba(189, 189, 189, 0.44);
+    z-index: 1111;
+    display: none;
+    border-radius: 0 0 15px 15px;
 }
 
 .header-mob-select {
@@ -2172,11 +2210,11 @@ video::-webkit-media-controls {
 
 .offer-swiper-item-img {
     display: block;
-    width: 154px;
-    height: 154px;
+    width: 230px;
+    height: 230px;
     -o-object-fit: contain;
     object-fit: contain;
-    margin-bottom: 12px;
+    margin-bottom: -30px;
 }
 
 .offer-swiper-item-img.special {
@@ -4475,6 +4513,9 @@ video::-webkit-media-controls {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
     min-height: 49px;
     background: #82CDDF;
     border-radius: 6px;
@@ -4488,7 +4529,7 @@ video::-webkit-media-controls {
 .reasons-main-swiper-item-text {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .reasons-main-swiper-item-text .dizainer-uebishe {
@@ -4515,7 +4556,7 @@ video::-webkit-media-controls {
 
 .reasons-main-swiper-item-list {
     list-style: disc;
-    padding-left: 20px;
+    list-style-position: inside;
 }
 
 .reasons-main-swiper-item-list li {
