@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init()
+
+document.getElementById('vid').play();
 
 // Slider
 var swiper = new Swiper(".news-swiper", {
