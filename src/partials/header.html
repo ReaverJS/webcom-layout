@@ -2,11 +2,6 @@
   <div class="header-top">
     <div class="container">
       <div class="header-top-inner">
-        <!-- <div class="header-top-link" >
-          <a href="#">Получите купон на Google 300 долларов</a>
-          <img src="assets/images/close.svg" alt="">
-        </div> -->
-
         <div class="header-top-left">
           <select class="header-top-select" name="lang">
             <option value="ru">RU</option>
@@ -48,7 +43,7 @@
         </div>
       </div>
     </div>
-  </div><!-- ./header-top -->
+  </div>
   <div class="header-main">
     <div class="container">
       <div class="header-main-inner">
@@ -61,6 +56,10 @@
           <ul class="header-main-nav-list">
             <li class="header-main-nav-item">
               <a href="about.html">О нас</a>
+              <img src="assets/images/menu-arrow.svg" alt="">
+              <div class="header-main-nav-item-submenu">
+                <a href="reason.html">Наши преимущества</a>
+              </div>
             </li>
             <li class="header-main-nav-item">
               <a href="services.html">Услуги</a>
@@ -89,5 +88,95 @@
 
       </div>
     </div>
-  </div><!-- ./header-main -->
+  </div>
 </header>
+
+<header class="header-mob">
+  <div class="header-mob-inner">
+    <a class="header-mob-logo" href="index.html">
+      <img src="assets/images/logo.png" alt="">
+    </a>
+    <div class="header-mob-group">
+      <a class="header-mob-linkus" href="#">
+        Связаться с нами
+      </a>
+      <button class="burger" type="button" id="sidebarToggle">
+        <span>Открыть навигацию</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <ul class="sidebar-nav-list">
+      <li class="sidebar-nav-item">
+        <a href="about.html">
+          О нас
+          <img src="assets/images/menu-arrow.svg" alt="">
+        </a>
+        <div class="sidebar-nav-item-submenu">
+          <a href="reason.html">Наши преимущества</a>
+        </div>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="services.html">Услуги</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#">
+          Кейсы
+          <img src="assets/images/menu-arrow.svg" alt="">
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#">
+          Наши клиенты
+          <img src="assets/images/menu-arrow.svg" alt="">
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#">Контакты</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#">Блог</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a href="#">Партнерам</a>
+      </li>
+    </ul>
+  </nav>
+
+  <select class="header-mob-select" name="lang-mob">
+    <option value="ru">RU</option>
+    <option value="kz">KZ</option>
+    <option value="en">EN</option>
+  </select>
+
+  <div class="header-mob-socials">
+    <div class="header-mob-socials-group">
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/wsp.svg" alt="">
+      </a>
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/tme.svg" alt="">
+      </a>
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/fb.svg" alt="">
+      </a>
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/tt.svg" alt="">
+      </a>
+    </div>
+    <div class="header-mob-socials-group">
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/wsp.svg" alt="">
+      </a>
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/linkedin.svg" alt="">
+      </a>
+      <a class="header-mob-socials-item" href="#">
+        <img src="assets/images/inst.svg" alt="">
+      </a>
+    </div>
+  </div>
+</aside>

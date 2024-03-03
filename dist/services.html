@@ -5,11 +5,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
@@ -25,11 +27,6 @@
       <div class="header-top">
         <div class="container">
           <div class="header-top-inner">
-            <!-- <div class="header-top-link" >
-              <a href="#">Получите купон на Google 300 долларов</a>
-              <img src="assets/images/close.svg" alt="">
-            </div> -->
-    
             <div class="header-top-left">
               <select class="header-top-select" name="lang">
                 <option value="ru">RU</option>
@@ -71,7 +68,7 @@
             </div>
           </div>
         </div>
-      </div><!-- ./header-top -->
+      </div>
       <div class="header-main">
         <div class="container">
           <div class="header-main-inner">
@@ -84,6 +81,10 @@
               <ul class="header-main-nav-list">
                 <li class="header-main-nav-item">
                   <a href="about.html">О нас</a>
+                  <img src="assets/images/menu-arrow.svg" alt="">
+                  <div class="header-main-nav-item-submenu">
+                    <a href="reason.html">Наши преимущества</a>
+                  </div>
                 </li>
                 <li class="header-main-nav-item">
                   <a href="services.html">Услуги</a>
@@ -112,10 +113,100 @@
     
           </div>
         </div>
-      </div><!-- ./header-main -->
+      </div>
     </header>
+    
+    <header class="header-mob">
+      <div class="header-mob-inner">
+        <a class="header-mob-logo" href="index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+        <div class="header-mob-group">
+          <a class="header-mob-linkus" href="#">
+            Связаться с нами
+          </a>
+          <button class="burger" type="button" id="sidebarToggle">
+            <span>Открыть навигацию</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="sidebar-nav-list">
+          <li class="sidebar-nav-item">
+            <a href="about.html">
+              О нас
+              <img src="assets/images/menu-arrow.svg" alt="">
+            </a>
+            <div class="sidebar-nav-item-submenu">
+              <a href="reason.html">Наши преимущества</a>
+            </div>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="services.html">Услуги</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">
+              Кейсы
+              <img src="assets/images/menu-arrow.svg" alt="">
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">
+              Наши клиенты
+              <img src="assets/images/menu-arrow.svg" alt="">
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">Блог</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">Партнерам</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <select class="header-mob-select" name="lang-mob">
+        <option value="ru">RU</option>
+        <option value="kz">KZ</option>
+        <option value="en">EN</option>
+      </select>
+    
+      <div class="header-mob-socials">
+        <div class="header-mob-socials-group">
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/wsp.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/tme.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/fb.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/tt.svg" alt="">
+          </a>
+        </div>
+        <div class="header-mob-socials-group">
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/wsp.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/linkedin.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/inst.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </aside>
 
-    <div class="page">
+    <div class="page" id="page">
       <section class="services-intro">
         <div class="container">
           <div class="services-intro-inner">
@@ -266,6 +357,102 @@
               </div>
             </div>
       
+            <div class="offer-swiper" style="max-width: 100%;">
+              <div class="swiper-wrapper">
+                <div class="offer-swiper-item swiper-slide">
+                  <div class="offer-swiper-item-front offer-swiper-item-side">
+                    <img class="offer-swiper-item-img" src="assets/images/index/offer/1.png" alt="">
+                    <h4 class="offer-swiper-item-title">
+                      Анализ <br>
+                      рынка
+                    </h4>
+                  </div>
+                  <div class="offer-swiper-item-back offer-swiper-item-side">
+                    <p class="offer-swiper-item-text">
+                      Отстраиваемся от конкурентов <br>
+                      и выявляем возможности для развития.
+                    </p>
+                  </div>
+                </div>
+                <div class="offer-swiper-item swiper-slide">
+                  <div class="offer-swiper-item-front offer-swiper-item-side">
+                    <img class="offer-swiper-item-img" src="assets/images/index/offer/2.png" alt="">
+                    <h4 class="offer-swiper-item-title">
+                      <span>Разработка</span>
+                      digital-стратегии
+                    </h4>
+                  </div>
+                  <div class="offer-swiper-item-back offer-swiper-item-side">
+                    <p class="offer-swiper-item-text">
+                      Создаем пошаговый план продвижения в интернете.
+                    </p>
+                  </div>
+                </div>
+                <div class="offer-swiper-item swiper-slide">
+                  <div class="offer-swiper-item-front offer-swiper-item-side">
+                    <img class="offer-swiper-item-img" src="assets/images/index/offer/3.png" alt="">
+                    <h4 class="offer-swiper-item-title">
+                      <span>Настройка</span>
+                      рекламных кампаний
+                    </h4>
+                  </div>
+                  <div class="offer-swiper-item-back offer-swiper-item-side">
+                    <p class="offer-swiper-item-text">
+                      Предоставляем полное <br>
+                      техническое обслуживание.
+                    </p>
+                  </div>
+                </div>
+                <div class="offer-swiper-item swiper-slide">
+                  <div class="offer-swiper-item-front offer-swiper-item-side">
+                    <img class="offer-swiper-item-img" src="assets/images/index/offer/4.png" alt="">
+                    <h4 class="offer-swiper-item-title">
+                      <span>Управление</span>
+                      кампаниями
+                    </h4>
+                  </div>
+                  <div class="offer-swiper-item-back offer-swiper-item-side">
+                    <p class="offer-swiper-item-text">
+                      Постоянно мониторим ход, <br>
+                      чтобы вовремя исправить сбои <br>
+                      и не «слить» бюджет.
+                    </p>
+                  </div>
+                </div>
+                <div class="offer-swiper-item swiper-slide">
+                  <div class="offer-swiper-item-front offer-swiper-item-side">
+                    <img class="offer-swiper-item-img" src="assets/images/index/offer/5.png" alt="">
+                    <h4 class="offer-swiper-item-title">
+                      Оптимизация
+                    </h4>
+                  </div>
+                  <div class="offer-swiper-item-back offer-swiper-item-side">
+                    <p class="offer-swiper-item-text">
+                      Тестируем гипотезы и выявляем, <br>
+                      какой вариант эффективен <br>
+                      для вашего бизнеса.
+                    </p>
+                  </div>
+                </div>
+                <div class="offer-swiper-item swiper-slide">
+                  <div class="offer-swiper-item-front offer-swiper-item-side">
+                    <img class="offer-swiper-item-img special" src="assets/images/index/offer/6.png" alt="">
+                    <h4 class="offer-swiper-item-title">
+                      Аналитика
+                    </h4>
+                  </div>
+                  <div class="offer-swiper-item-back offer-swiper-item-side">
+                    <p class="offer-swiper-item-text">
+                      Детально оцениваем цифры, <br>
+                      предоставляем отчеты <br>
+                      и закрывающие документы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <span class="offer-swiper-pagination"></span>
+            </div>
+      
           </div>
         </div>
       </section>
@@ -329,6 +516,42 @@
               </div>
             </div>
       
+            <div class="services-cards-swiper">
+              <div class="swiper-wrapper">
+                <div class="services-cards-swiper-item swiper-slide">
+                  <h4 class="services-cards-swiper-item-title">КАМПАНИИ</h4>
+                  <img class="services-cards-swiper-item-img" src="assets/images/services/services-cards/1.1.png" alt="">
+                  <ul class="services-cards-swiper-item-list">
+                    <li>Планирование</li>
+                    <li>Модерацияета</li>
+                    <li>Настройка</li>
+                  </ul>
+                </div>
+      
+                <div class="services-cards-swiper-item swiper-slide">
+                  <h4 class="services-cards-swiper-item-title">КАБИНЕТЫ</h4>
+                  <img class="services-cards-swiper-item-img" src="assets/images/services/services-cards/1.2.png" alt="">
+                  <ul class="services-cards-swiper-item-list">
+                    <li>Бюджеты</li>
+                    <li>Переносы</li>
+                    <li>Пополнение</li>
+                  </ul>
+                </div>
+      
+                <div class="services-cards-swiper-item swiper-slide">
+                  <h4 class="services-cards-swiper-item-title">АНАЛИТИКА</h4>
+                  <img class="services-cards-swiper-item-img" src="assets/images/services/services-cards/1.3.png" alt="">
+                  <ul class="services-cards-swiper-item-list">
+                    <li>Конверсии</li>
+                    <li>Запросы</li>
+                    <li>ROI</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <span class="services-cards-swiper-pagination"></span>
+            </div>
+      
           </div>
         </div>
       </section>
@@ -373,6 +596,41 @@
               </div>
             </div>
       
+            <div class="services-cards-swiper2">
+              <div class="swiper-wrapper">
+                <div class="services-cards-swiper-item swiper-slide">
+                  <h4 class="services-cards-swiper-item-title">ДОКУМЕНТЫ</h4>
+                  <img class="services-cards-swiper-item-img" src="assets/images/services/services-cards/2.1.png" alt="">
+                  <ul class="services-cards-swiper-item-list">
+                    <li>Договора</li>
+                    <li>Счета</li>
+                    <li>Акты сверок</li>
+                  </ul>
+                </div>
+      
+                <div class="services-cards-swiper-item swiper-slide">
+                  <h4 class="services-cards-swiper-item-title">ИНТЕГРАЦИИ</h4>
+                  <img class="services-cards-swiper-item-img" src="assets/images/services/services-cards/2.2.png" alt="">
+                  <ul class="services-cards-swiper-item-list">
+                    <li>Битрикс24</li>
+                    <li>Любые CRM-системы</li>
+                    <li>Сторонние системы</li>
+                  </ul>
+                </div>
+      
+                <div class="services-cards-swiper-item swiper-slide">
+                  <h4 class="services-cards-swiper-item-title">КРЕАТИВЫ</h4>
+                  <img class="services-cards-swiper-item-img" src="assets/images/services/services-cards/2.3.png" alt="">
+                  <ul class="services-cards-swiper-item-list">
+                    <li>Создание</li>
+                    <li>Хранение</li>
+                  </ul>
+                </div>
+              </div>
+      
+              <span class="services-cards-swiper-pagination2"></span>
+            </div>
+      
           </div>
         </div>
       </section>
@@ -388,82 +646,147 @@
         </div>
       </div>
       
+
+      <a class="fixed-btn" href="#">
+        <img src="assets/images/fixed-btn-img.svg" alt="">
+      </a>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-    
-          <div class="footer-left">
-            <div class="footer-left-col">
-              <img class="footer-logo" src="assets/images/logo.png" alt="">
-              <div class="footer-socials-flex">
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/tme.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/wsp.svg" alt="">
-                </a>
-              </div>
-              <a class="footer-linkus" href="#">Связаться с нами</a>
-            </div>
-    
-            <div class="footer-left-col">
-              <span class="footer-social-title">Соц сети</span>
-              <div class="footer-socials">
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/inst.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/fb.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/ytb.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/linkedin.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/tt.svg" alt="">
-                </a>
-              </div>
-    
-              <a class="footer-copyright" href="#">Политика <br>конфиденциальности</a>
-            </div>
+    <div><footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        <div class="footer-left-col">
+          <img class="footer-logo" src="assets/images/logo.png" alt="">
+          <div class="footer-socials-flex">
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/tme.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/wsp.svg" alt="">
+            </a>
           </div>
-    
-          <div class="footer-right">
-            <div class="footer-right-col">
-              <nav class="footer-nav">
-                <div class="footer-nav-col">
-                  <a class="footer-nav-link" href="#">Страны и площадки</a>
-                  <a class="footer-nav-link" href="about.html">О нас</a>
-                  <a class="footer-nav-link" href="reason.html">6 причин выбрать нас</a>
-                </div>
-                <div class="footer-nav-col">
-                  <a class="footer-nav-link" href="#">Наши клиенты</a>
-                  <a class="footer-nav-link" href="services.html">Услуги</a>
-                  <a class="footer-nav-link" href="#">Кейсы</a>
-                </div>
-              </nav>
-            </div>
-    
-            <div class="footer-right-col">
-              <span class="footer-ur-title">Юридическая информация</span>
-              <div class="footer-ur">
-                ТОО «Ad_Wise Digital»
-                <br>
-                <br>
-                г.Алматы, <br>
-                Коктем -1, д. 15а, оф. 8 <br>
-                БИН: 171140030506.
-              </div>
-            </div>
+          <a class="footer-linkus" href="#">Связаться с нами</a>
+        </div>
+
+        <div class="footer-left-col">
+          <span class="footer-social-title">Соц сети</span>
+          <div class="footer-socials">
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/inst.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/fb.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/ytb.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/linkedin.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/tt.svg" alt="">
+            </a>
           </div>
-    
+
+          <a class="footer-copyright" href="#">Политика <br>конфиденциальности</a>
         </div>
       </div>
-    </footer>
+
+      <div class="footer-right">
+        <div class="footer-right-col">
+          <nav class="footer-nav">
+            <div class="footer-nav-col">
+              <a class="footer-nav-link" href="#">Страны и площадки</a>
+              <a class="footer-nav-link" href="about.html">О нас</a>
+              <a class="footer-nav-link" href="reason.html">6 причин выбрать нас</a>
+            </div>
+            <div class="footer-nav-col">
+              <a class="footer-nav-link" href="#">Наши клиенты</a>
+              <a class="footer-nav-link" href="services.html">Услуги</a>
+              <a class="footer-nav-link" href="#">Кейсы</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-right-col">
+          <span class="footer-ur-title">Юридическая информация</span>
+          <div class="footer-ur">
+            ТОО «Ad_Wise Digital»
+            <br>
+            <br>
+            г.Алматы, <br>
+            Коктем -1, д. 15а, оф. 8 <br>
+            БИН: 171140030506.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-mob">
+  <div class="footer-mob-inner">
+
+    <a class="footer-mob-logo" href="#">
+      <img src="assets/images/logo.png" alt="">
+    </a>
+
+    <a class="footer-mob-linkus" href="#">Связаться с нами</a>
+
+    <div class="footer-mob-socials">
+      <div class="footer-mob-socials-group">
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/wsp.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/tme.svg" alt="">
+        </a>
+      </div>
+      <span class="footer-mob-socials-midtext">Социальные сети</span>
+      <div class="footer-mob-socials-group">
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/ytb.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/linkedin.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/inst.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/fb.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/tt.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-mob-nav">
+      <a class="footer-mob-nav-item" href="#">Страны и площадки</a>
+      <a class="footer-mob-nav-item" href="about.html">О нас</a>
+      <a class="footer-mob-nav-item" href="reason.html">6 причин выбрать нас</a>
+      <a class="footer-mob-nav-item" href="#">Наши клиенты</a>
+      <a class="footer-mob-nav-item" href="services.html">Услуги</a>
+      <a class="footer-mob-nav-item" href="#">Кейсы</a>
+    </div>
+
+    <div class="footer-mob-ur">
+      <span class="footer-mob-ur-title">Юридическая информация</span>
+      <span class="footer-mob-ur-text">ТОО «Ad_Wise Digital»</span>
+      <span class="footer-mob-ur-text">
+        г.Алматы, Коктем -1, д. 15а, оф. 8 <br>
+        БИН: 171140030506.
+      </span>
+    </div>
+
+    <a class="footer-mob-copyright" href="#">Политика конфиденциальности</a>
+  </div>
+</footer>
+</div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

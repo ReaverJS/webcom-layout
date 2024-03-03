@@ -5,11 +5,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
@@ -25,11 +27,6 @@
       <div class="header-top">
         <div class="container">
           <div class="header-top-inner">
-            <!-- <div class="header-top-link" >
-              <a href="#">Получите купон на Google 300 долларов</a>
-              <img src="assets/images/close.svg" alt="">
-            </div> -->
-    
             <div class="header-top-left">
               <select class="header-top-select" name="lang">
                 <option value="ru">RU</option>
@@ -71,7 +68,7 @@
             </div>
           </div>
         </div>
-      </div><!-- ./header-top -->
+      </div>
       <div class="header-main">
         <div class="container">
           <div class="header-main-inner">
@@ -84,6 +81,10 @@
               <ul class="header-main-nav-list">
                 <li class="header-main-nav-item">
                   <a href="about.html">О нас</a>
+                  <img src="assets/images/menu-arrow.svg" alt="">
+                  <div class="header-main-nav-item-submenu">
+                    <a href="reason.html">Наши преимущества</a>
+                  </div>
                 </li>
                 <li class="header-main-nav-item">
                   <a href="services.html">Услуги</a>
@@ -112,10 +113,100 @@
     
           </div>
         </div>
-      </div><!-- ./header-main -->
+      </div>
     </header>
+    
+    <header class="header-mob">
+      <div class="header-mob-inner">
+        <a class="header-mob-logo" href="index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+        <div class="header-mob-group">
+          <a class="header-mob-linkus" href="#">
+            Связаться с нами
+          </a>
+          <button class="burger" type="button" id="sidebarToggle">
+            <span>Открыть навигацию</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="sidebar-nav-list">
+          <li class="sidebar-nav-item">
+            <a href="about.html">
+              О нас
+              <img src="assets/images/menu-arrow.svg" alt="">
+            </a>
+            <div class="sidebar-nav-item-submenu">
+              <a href="reason.html">Наши преимущества</a>
+            </div>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="services.html">Услуги</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">
+              Кейсы
+              <img src="assets/images/menu-arrow.svg" alt="">
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">
+              Наши клиенты
+              <img src="assets/images/menu-arrow.svg" alt="">
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">Блог</a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#">Партнерам</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <select class="header-mob-select" name="lang-mob">
+        <option value="ru">RU</option>
+        <option value="kz">KZ</option>
+        <option value="en">EN</option>
+      </select>
+    
+      <div class="header-mob-socials">
+        <div class="header-mob-socials-group">
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/wsp.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/tme.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/fb.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/tt.svg" alt="">
+          </a>
+        </div>
+        <div class="header-mob-socials-group">
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/wsp.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/linkedin.svg" alt="">
+          </a>
+          <a class="header-mob-socials-item" href="#">
+            <img src="assets/images/inst.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </aside>
 
-    <div class="page">
+    <div class="page" id="page">
       
       <section class="reason-intro">
         <div class="container">
@@ -146,6 +237,36 @@
               </div>
             </div>
       
+            <div class="reason-intro-swiper">
+              <div class="swiper-wrapper">
+                <div class="reason-intro-swiper-item swiper-slide">
+                  <div class="reason-intro-swiper-item-row">
+                    Независимость
+                  </div>
+                  <div class="reason-intro-swiper-item-row">
+                    Собственная <br>кредитная линия
+                  </div>
+                  <div class="reason-intro-swiper-item-row">
+                    Инновации
+                  </div>
+                </div>
+      
+                <div class="reason-intro-swiper-item swiper-slide">
+                  <div class="reason-intro-swiper-item-row">
+                    Комплексные решения
+                  </div>
+                  <div class="reason-intro-swiper-item-row">
+                    Прозрачность
+                  </div>
+                  <div class="reason-intro-swiper-item-row">
+                    Команда <br>профессионалов
+                  </div>
+                </div>
+              </div>
+      
+              <span class="reason-intro-swiper-pagination"></span>
+            </div>
+      
           </div>
         </div>
       </section>
@@ -154,214 +275,402 @@
         <div class="container">
           <div class="reasons-main-inner">
       
-            <div class="reasons-main-card" data-aos="fade-right">
-              <div class="reasons-main-card-info">
-                <h4 class="reasons-main-card-title">
-                  Независимость
-                </h4>
-                <div class="reasons-main-card-text">
-                  <p class="reasons-main-card-text-desc">
-                    WebcomKZ — полностью независимое агентство, <br>
-                    зарегистрированное в Республике Казахстан без <br>
-                    аффилиации с другими компаниями и странами. <br>
-                    Имеем прямые контракты с Google Реклама, Яндекс <br>
-                    Директ, Meta, MyTarget, Google Marketing Platform, TikTok <br>
-                    Business Center и другими сервисами. <br>
-                    Это позволяет оперативно обрабатывать ваши запросы по <br>
-                    времени РК без учета внешнеполитических отношений.
-                  </p>
+            <div class="reasons-main-cards">
+              <div class="reasons-main-card" data-aos="fade-right">
+                <div class="reasons-main-card-info">
+                  <h4 class="reasons-main-card-title">
+                    Независимость
+                  </h4>
+                  <div class="reasons-main-card-text">
+                    <p class="reasons-main-card-text-desc">
+                      WebcomKZ — полностью независимое агентство, <br>
+                      зарегистрированное в Республике Казахстан без <br>
+                      аффилиации с другими компаниями и странами. <br>
+                      Имеем прямые контракты с Google Реклама, Яндекс <br>
+                      Директ, Meta, MyTarget, Google Marketing Platform, TikTok <br>
+                      Business Center и другими сервисами. <br>
+                      Это позволяет оперативно обрабатывать ваши запросы по <br>
+                      времени РК без учета внешнеполитических отношений.
+                    </p>
+                  </div>
+                </div>
+                <div class="reasons-main-card-preview">
+                  <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/1.png" alt="">
                 </div>
               </div>
-              <div class="reasons-main-card-preview">
-                <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/1.png" alt="">
+      
+              <div class="reasons-main-card" data-aos="fade-right">
+                <div class="reasons-main-card-info">
+                  <h4 class="reasons-main-card-title">
+                    Собственная <br> кредитная линия
+                  </h4>
+                  <div class="reasons-main-card-text">
+                    <span class="reasons-main-card-text-big">Ее наличие повышает эффективность вашей рекламной компании, так как:</span>
+                    <ul class="reasons-main-card-text-list">
+                      <li>повышается доверие сервисов, поэтому сокращается время модерации, а техническая поддержка работает быстрее;</li>
+                      <li>больше возможностей и опций, прерогатив для управления рекламным кабинетом;</li>
+                      <li>не ограничено количество личных кабинетов;</li>
+                      <li>возможность переноса бюджета между рекламными кабинетами.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="reasons-main-card-preview">
+                  <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/2.png" alt="">
+                </div>
+              </div>
+      
+              <div class="reasons-main-card" data-aos="fade-right">
+                <div class="reasons-main-card-info">
+                  <h4 class="reasons-main-card-title">
+                    Инновации
+                  </h4>
+                  <div class="reasons-main-card-text">
+                    <p class="reasons-main-card-text-desc">
+                      Используем собственное, единственное на рынке SAAS-<br>
+                      решение, которое позволяет объединить возможности десятков <br>
+                      площадок и ресурсов. Результат — все рекламные кампании в <br>
+                      одном месте, автоматизация и оптимизация бизнес-процессов <br>
+                      отдела маркетинга.
+                    </p>
+                  </div>
+                </div>
+                <div class="reasons-main-card-preview">
+                  <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/3.png" alt="">
+                </div>
+              </div>
+      
+              <div class="reasons-main-card" data-aos="fade-right">
+                <div class="reasons-main-card-info">
+                  <h4 class="reasons-main-card-title">
+                    Комплексные решения
+                  </h4>
+                  <div class="reasons-main-card-text">
+                    <p class="reasons-main-card-text-desc">
+                      Работаем по принципу «единого окна»: планируем, <br>
+                      разрабатываем и реализуем рекламные digital-кампании, <br>
+                      а также сопровождаем проекты партнеров. <br> 
+                      Клиентам, которые заказывают комплекс услуг или <br>
+                      сотрудничают с нами длительное время, делаем <br>
+                      специальные предложения и скидки.
+                    </p>
+                  </div>
+                </div>
+                <div class="reasons-main-card-preview">
+                  <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/4.png" alt="">
+                </div>
+              </div>
+      
+              <div class="reasons-main-card" data-aos="fade-right">
+                <div class="reasons-main-card-info">
+                  <h4 class="reasons-main-card-title">
+                    Прозрачность
+                  </h4>
+                  <div class="reasons-main-card-text">
+                    <p class="reasons-main-card-text-desc">
+                      Соблюдаем конфиденциальность и неприкосновенность <br> 
+                      данных клиентов. <br>
+                      Придерживаемся открытой политики курса. <br>
+                      Предоставляем информативную отчетность, чтобы вы <br>
+                      видели, на что идут деньги и какой эффект приносят. <br>
+                      Вовремя готовим отчеты и необходимые документы в <br>
+                      удобном формате закрытия (электронный <br>
+                      документооборот) в соответствии с действующими <br>
+                      стандартами как Казахстана, так и других стран мира.
+                    </p>
+                  </div>
+                </div>
+                <div class="reasons-main-card-preview">
+                  <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/5.png" alt="">
+                </div>
+              </div>
+      
+              <div class="reasons-main-card" data-aos="fade-right">
+                <div class="reasons-main-card-info">
+                  <h4 class="reasons-main-card-title">
+                    Команда профессионалов
+                  </h4>
+                  <div class="reasons-main-card-text">
+                    <p class="reasons-main-card-text-desc">
+                      Сертифицированные специалисты (project и PPC) <br>
+                      вовлечены в задачи вашего бизнеса, чтобы добиться <br>
+                      лучшего результата. Вся команда обладает высокой <br>
+                      экспертизой и работает на трех языках (казахский, <br>
+                      русский, английский).
+                    </p>
+                  </div>
+                </div>
+                <div class="reasons-main-card-preview">
+                  <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/6.png" alt="">
+                </div>
               </div>
             </div>
       
-            <div class="reasons-main-card" data-aos="fade-right">
-              <div class="reasons-main-card-info">
-                <h4 class="reasons-main-card-title">
-                  Собственная <br> кредитная линия
-                </h4>
-                <div class="reasons-main-card-text">
-                  <span class="reasons-main-card-text-big">Ее наличие повышает эффективность вашей рекламной компании, так как:</span>
-                  <ul class="reasons-main-card-text-list">
+            <div class="reasons-main-swiper">
+              <div class="swiper-wrapper">
+                <div class="reasons-main-swiper-item swiper-slide">
+                  <img class="reasons-main-swiper-item-img" src="assets/images/reason/reasons-main/1.png" alt="">
+                  <h4 class="reasons-main-swiper-item-title">
+                    Независимость
+                  </h4>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Ad_Wise Digital — полностью <br>
+                    независимое агентство, <br>
+                    зарегистрированное <br>
+                    в Республике Казахстан без аффилиации с другими компаниями и странами. <br>
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Имеем прямые контракты с Google Реклама, Яндекс
+                    Директ, Meta, MyTarget, Google Marketing Platform, TikTok
+                    Business Center и другими сервисами.
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Это позволяет оперативно <br> обрабатывать ваши запросы по
+                    времени РК без учета внешнеполитических отношений.
+                  </p>
+                </div>
+      
+                <div class="reasons-main-swiper-item swiper-slide">
+                  <img class="reasons-main-swiper-item-img" src="assets/images/reason/reasons-main/2.png" alt="">
+                  <h4 class="reasons-main-swiper-item-title">
+                    Собственная <br> кредитная линия
+                  </h4>
+                  <span class="reasons-main-swiper-item-text-big">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Ее наличие повышает <br>
+                    эффективность вашей рекламной <br>
+                    компании, так как:
+                  </span>
+                  <ul class="reasons-main-swiper-item-list">
                     <li>повышается доверие сервисов, поэтому сокращается время модерации, а техническая поддержка работает быстрее;</li>
                     <li>больше возможностей и опций, прерогатив для управления рекламным кабинетом;</li>
                     <li>не ограничено количество личных кабинетов;</li>
                     <li>возможность переноса бюджета между рекламными кабинетами.</li>
                   </ul>
                 </div>
-              </div>
-              <div class="reasons-main-card-preview">
-                <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/2.png" alt="">
-              </div>
-            </div>
       
-            <div class="reasons-main-card" data-aos="fade-right">
-              <div class="reasons-main-card-info">
-                <h4 class="reasons-main-card-title">
-                  Инновации
-                </h4>
-                <div class="reasons-main-card-text">
-                  <p class="reasons-main-card-text-desc">
-                    Используем собственное, единственное на рынке SAAS-<br>
+                <div class="reasons-main-swiper-item swiper-slide">
+                  <img class="reasons-main-swiper-item-img" src="assets/images/reason/reasons-main/3.png" alt="">
+                  <h4 class="reasons-main-swiper-item-title">
+                    Инновации
+                  </h4>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Используем собственное, единственное на рынке SAAS-<br>
                     решение, которое позволяет объединить возможности десятков <br>
-                    площадок и ресурсов. Результат — все рекламные кампании в <br>
+                    площадок и ресурсов. 
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Результат — все рекламные кампании в <br>
                     одном месте, автоматизация и оптимизация бизнес-процессов <br>
                     отдела маркетинга.
                   </p>
                 </div>
-              </div>
-              <div class="reasons-main-card-preview">
-                <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/3.png" alt="">
-              </div>
-            </div>
       
-            <div class="reasons-main-card" data-aos="fade-right">
-              <div class="reasons-main-card-info">
-                <h4 class="reasons-main-card-title">
-                  Комплексные решения
-                </h4>
-                <div class="reasons-main-card-text">
-                  <p class="reasons-main-card-text-desc">
-                    Работаем по принципу «единого окна»: планируем, <br>
+                <div class="reasons-main-swiper-item swiper-slide">
+                  <img class="reasons-main-swiper-item-img" src="assets/images/reason/reasons-main/4.png" alt="">
+                  <h4 class="reasons-main-swiper-item-title">
+                    Комплексные решения
+                  </h4>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Работаем по принципу «единого окна»: планируем, <br>
                     разрабатываем и реализуем рекламные digital-кампании, <br>
                     а также сопровождаем проекты партнеров. <br> 
-                    Клиентам, которые заказывают комплекс услуг или <br>
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Клиентам, которые заказывают комплекс услуг или <br>
                     сотрудничают с нами длительное время, делаем <br>
                     специальные предложения и скидки.
                   </p>
                 </div>
-              </div>
-              <div class="reasons-main-card-preview">
-                <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/4.png" alt="">
-              </div>
-            </div>
       
-            <div class="reasons-main-card" data-aos="fade-right">
-              <div class="reasons-main-card-info">
-                <h4 class="reasons-main-card-title">
-                  Прозрачность
-                </h4>
-                <div class="reasons-main-card-text">
-                  <p class="reasons-main-card-text-desc">
-                    Соблюдаем конфиденциальность и неприкосновенность <br> 
+                <div class="reasons-main-swiper-item swiper-slide">
+                  <img class="reasons-main-swiper-item-img" src="assets/images/reason/reasons-main/5.png" alt="">
+                  <h4 class="reasons-main-swiper-item-title">
+                    Прозрачность
+                  </h4>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Соблюдаем конфиденциальность и неприкосновенность <br> 
                     данных клиентов. <br>
-                    Придерживаемся открытой политики курса. <br>
-                    Предоставляем информативную отчетность, чтобы вы <br>
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Придерживаемся открытой политики <br>курса.
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Предоставляем информативную отчетность, чтобы вы
                     видели, на что идут деньги и какой эффект приносят. <br>
-                    Вовремя готовим отчеты и необходимые документы в <br>
-                    удобном формате закрытия (электронный <br>
-                    документооборот) в соответствии с действующими <br>
-                    стандартами как Казахстана, так и других стран мира.
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Вовремя готовим отчеты и необходимые документы в
+                    удобном формате закрытия (электронный
+                    документооборот) в соответствии <br>
+                    с действующими стандартами как Казахстана, так и других стран мира.
                   </p>
                 </div>
-              </div>
-              <div class="reasons-main-card-preview">
-                <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/5.png" alt="">
-              </div>
-            </div>
       
-            <div class="reasons-main-card" data-aos="fade-right">
-              <div class="reasons-main-card-info">
-                <h4 class="reasons-main-card-title">
-                  Команда профессионалов
-                </h4>
-                <div class="reasons-main-card-text">
-                  <p class="reasons-main-card-text-desc">
-                    Сертифицированные специалисты (project и PPC) <br>
-                    вовлечены в задачи вашего бизнеса, чтобы добиться <br>
-                    лучшего результата. Вся команда обладает высокой <br>
-                    экспертизой и работает на трех языках (казахский, <br>
-                    русский, английский).
+                <div class="reasons-main-swiper-item swiper-slide">
+                  <img class="reasons-main-swiper-item-img" src="assets/images/reason/reasons-main/6.png" alt="">
+                  <h4 class="reasons-main-swiper-item-title">
+                    Команда профессионалов
+                  </h4>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Сертифицированные специалисты <br>
+                    (project и PPC) вовлечены в задачи вашего бизнеса, чтобы добиться
+                    лучшего результата.
+                  </p>
+                  <p class="reasons-main-swiper-item-text">
+                    <span class="dizainer-uebishe">&nbsp;&nbsp;&nbsp;</span>Вся команда обладает высокой <br>
+                    экспертизой и работает на трех языках <br>
+                    (казахский, русский, английский).
                   </p>
                 </div>
               </div>
-              <div class="reasons-main-card-preview">
-                <img class="reasons-main-card-img" src="assets/images/reason/reasons-main/6.png" alt="">
-              </div>
+      
+              <span class="reasons-main-swiper-pagination"></span>
             </div>
             
           </div>
         </div>
       </section>
       
+
+      <a class="fixed-btn" href="#">
+        <img src="assets/images/fixed-btn-img.svg" alt="">
+      </a>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-    
-          <div class="footer-left">
-            <div class="footer-left-col">
-              <img class="footer-logo" src="assets/images/logo.png" alt="">
-              <div class="footer-socials-flex">
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/tme.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/wsp.svg" alt="">
-                </a>
-              </div>
-              <a class="footer-linkus" href="#">Связаться с нами</a>
-            </div>
-    
-            <div class="footer-left-col">
-              <span class="footer-social-title">Соц сети</span>
-              <div class="footer-socials">
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/inst.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/fb.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/ytb.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/linkedin.svg" alt="">
-                </a>
-                <a class="footer-socials-link" href="#">
-                  <img src="assets/images/tt.svg" alt="">
-                </a>
-              </div>
-    
-              <a class="footer-copyright" href="#">Политика <br>конфиденциальности</a>
-            </div>
+    <div><footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-left">
+        <div class="footer-left-col">
+          <img class="footer-logo" src="assets/images/logo.png" alt="">
+          <div class="footer-socials-flex">
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/tme.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/wsp.svg" alt="">
+            </a>
           </div>
-    
-          <div class="footer-right">
-            <div class="footer-right-col">
-              <nav class="footer-nav">
-                <div class="footer-nav-col">
-                  <a class="footer-nav-link" href="#">Страны и площадки</a>
-                  <a class="footer-nav-link" href="about.html">О нас</a>
-                  <a class="footer-nav-link" href="reason.html">6 причин выбрать нас</a>
-                </div>
-                <div class="footer-nav-col">
-                  <a class="footer-nav-link" href="#">Наши клиенты</a>
-                  <a class="footer-nav-link" href="services.html">Услуги</a>
-                  <a class="footer-nav-link" href="#">Кейсы</a>
-                </div>
-              </nav>
-            </div>
-    
-            <div class="footer-right-col">
-              <span class="footer-ur-title">Юридическая информация</span>
-              <div class="footer-ur">
-                ТОО «Ad_Wise Digital»
-                <br>
-                <br>
-                г.Алматы, <br>
-                Коктем -1, д. 15а, оф. 8 <br>
-                БИН: 171140030506.
-              </div>
-            </div>
+          <a class="footer-linkus" href="#">Связаться с нами</a>
+        </div>
+
+        <div class="footer-left-col">
+          <span class="footer-social-title">Соц сети</span>
+          <div class="footer-socials">
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/inst.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/fb.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/ytb.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/linkedin.svg" alt="">
+            </a>
+            <a class="footer-socials-link" href="#">
+              <img src="assets/images/tt.svg" alt="">
+            </a>
           </div>
-    
+
+          <a class="footer-copyright" href="#">Политика <br>конфиденциальности</a>
         </div>
       </div>
-    </footer>
+
+      <div class="footer-right">
+        <div class="footer-right-col">
+          <nav class="footer-nav">
+            <div class="footer-nav-col">
+              <a class="footer-nav-link" href="#">Страны и площадки</a>
+              <a class="footer-nav-link" href="about.html">О нас</a>
+              <a class="footer-nav-link" href="reason.html">6 причин выбрать нас</a>
+            </div>
+            <div class="footer-nav-col">
+              <a class="footer-nav-link" href="#">Наши клиенты</a>
+              <a class="footer-nav-link" href="services.html">Услуги</a>
+              <a class="footer-nav-link" href="#">Кейсы</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-right-col">
+          <span class="footer-ur-title">Юридическая информация</span>
+          <div class="footer-ur">
+            ТОО «Ad_Wise Digital»
+            <br>
+            <br>
+            г.Алматы, <br>
+            Коктем -1, д. 15а, оф. 8 <br>
+            БИН: 171140030506.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-mob">
+  <div class="footer-mob-inner">
+
+    <a class="footer-mob-logo" href="#">
+      <img src="assets/images/logo.png" alt="">
+    </a>
+
+    <a class="footer-mob-linkus" href="#">Связаться с нами</a>
+
+    <div class="footer-mob-socials">
+      <div class="footer-mob-socials-group">
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/wsp.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/tme.svg" alt="">
+        </a>
+      </div>
+      <span class="footer-mob-socials-midtext">Социальные сети</span>
+      <div class="footer-mob-socials-group">
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/ytb.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/linkedin.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/inst.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/fb.svg" alt="">
+        </a>
+        <a class="footer-mob-socials-item" href="#">
+          <img src="assets/images/tt.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-mob-nav">
+      <a class="footer-mob-nav-item" href="#">Страны и площадки</a>
+      <a class="footer-mob-nav-item" href="about.html">О нас</a>
+      <a class="footer-mob-nav-item" href="reason.html">6 причин выбрать нас</a>
+      <a class="footer-mob-nav-item" href="#">Наши клиенты</a>
+      <a class="footer-mob-nav-item" href="services.html">Услуги</a>
+      <a class="footer-mob-nav-item" href="#">Кейсы</a>
+    </div>
+
+    <div class="footer-mob-ur">
+      <span class="footer-mob-ur-title">Юридическая информация</span>
+      <span class="footer-mob-ur-text">ТОО «Ad_Wise Digital»</span>
+      <span class="footer-mob-ur-text">
+        г.Алматы, Коктем -1, д. 15а, оф. 8 <br>
+        БИН: 171140030506.
+      </span>
+    </div>
+
+    <a class="footer-mob-copyright" href="#">Политика конфиденциальности</a>
+  </div>
+</footer>
+</div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

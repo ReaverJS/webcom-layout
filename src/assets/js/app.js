@@ -1,29 +1,236 @@
-AOS.init();
+AOS.init()
 
 // Slider
 var swiper = new Swiper(".news-swiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 32,
   centeredSlides: true,
   grabCursor: true,
-  loop: true,
+  loop: false,
+  autoplay: {
+    delay: 10000,
+  },
   pagination: {
     el: ".news-swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".news-swiper-pagination-button--right",
+    prevEl: ".news-swiper-pagination-button--left",
+  },
+  breakpoints: {
+    930: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+      loop: true,
+    },
+  }
 })
 
 var swiper = new Swiper(".trust-swiper", {
-  slidesPerView: 5,
-  spaceBetween: 38,
+  slidesPerView: 2,
+  spaceBetween: 12,
   grabCursor: true,
   loop: false,
-  slidesPerGroup: 5,
+  slidesPerGroup: 2,
   watchOverflow: true,
   autoplay: {
     delay: 5000,
   },
+  breakpoints: {
+    930: {
+      slidesPerView: 5,
+      spaceBetween: 38,
+      slidesPerGroup: 5,
+      watchOverflow: true,
+    },
+  },
+  pagination: {
+    el: ".trust-swiper-pagination",
+    clickable: true,
+  }
 })
+
+var swiper = new Swiper(".subtintro-swiper", {
+  slidesPerView: 2,
+  spaceBetween: 12,
+  grabCursor: true,
+  loop: false,
+  slidesPerGroup: 3,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 12,
+    },
+  },
+  pagination: {
+    el: ".subtintro-swiper-pagination",
+    clickable: true,
+  }
+})
+
+const offerSwiperItems = document.querySelectorAll('.offer-swiper-item')
+var swiper = new Swiper(".offer-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 36,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".offer-swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".offer-swiper-button--right",
+    prevEl: ".offer-swiper-button--left",
+  },
+  on: {
+    slideChange: function () {
+      offerSwiperItems.forEach((i) => i.classList.remove('flipped'))
+    },
+  },
+})
+
+var swiper = new Swiper(".case-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 36,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".case-swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".case-swiper-pagination-button--right",
+    prevEl: ".case-swiper-pagination-button--left",
+  }
+})
+
+var swiper = new Swiper(".plus-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".plus-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".inovation-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".inovation-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".persons-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".persons-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".reason-intro-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".reason-intro-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".reasons-main-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".reasons-main-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".services-cards-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".services-cards-swiper-pagination",
+    clickable: true,
+  },
+})
+
+var swiper = new Swiper(".services-cards-swiper2", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  grabCursor: true,
+  loop: true,
+  slidesPerGroup: 1,
+  watchOverflow: true,
+  autoplay: {
+    delay: 10000,
+  },
+  pagination: {
+    el: ".services-cards-swiper-pagination2",
+    clickable: true,
+  },
+})
+
 
 // Map
 function init() {

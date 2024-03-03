@@ -11,12 +11,15 @@ body {
 
   &.no-scroll {
     overflow: hidden;
-    padding-right: 15px;
   }
 }
 
 .page {
   overflow: hidden;
+
+  @media(max-width: 930px) {
+    padding-top: 90px;
+  }
 }
 
 *,
@@ -25,10 +28,39 @@ body {
   box-sizing: border-box;
 }
 
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 /* Blocks */
 @import "blocks/container.scss";
 @import "blocks/header.scss";
+@import "blocks/header-mob.scss";
+@import "blocks/burger.scss";
+@import "blocks/sidebar.scss";
 @import "blocks/footer.scss";
+@import "blocks/footer-mob.scss";
 @import "blocks/fixed-btn.scss";
 @import "blocks/modal.scss";
 

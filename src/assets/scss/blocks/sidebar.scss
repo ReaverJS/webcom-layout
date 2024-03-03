@@ -1,0 +1,130 @@
+.sidebar {
+  display: none;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #fff;
+  box-shadow: 5px 0 15px rgba(#050505, .1);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  padding: 25px 10px 48px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  overflow-y: scroll;
+
+  @media (max-width: 930px) {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+    padding-bottom: 1.5rem;
+    overflow: auto;
+
+    top: 90px;
+
+    transform: translateX(-100%);
+    transition: transform .2s linear;
+
+    .show-sidebar & {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* .sidebar-nav-list {
+  display: flex;
+  flex-direction: column;
+} */
+
+.sidebar-nav-item {
+  width: 250px;
+  text-align: center;
+  position: relative;
+
+  & + & {
+    margin-top: 36px;
+  }
+
+  a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -24px;
+    display: block;
+    max-width: 12px;
+    height: auto;
+  }
+
+  &:hover {
+    .sidebar-nav-item-submenu {
+      display: block;
+    }
+  }
+}
+
+.sidebar-nav-item-submenu {
+  position: absolute;
+  width: 250px;
+  padding: 16px;
+  background: #fff;
+  bottom: -53px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 3px 0 rgba(189,189,189,.44);
+  z-index: 1111;
+  display: none;
+  border-radius: 0 0 15px 15px;
+}
+
+.header-mob-select {
+  font-size: 24px;
+  line-height: 24px;
+  background: inherit;
+  border: none;
+  font-family: $roboto;
+  padding: 20px 0;
+}
+
+.header-mob-socials {
+  margin-bottom: 100px;
+}
+
+.header-mob-socials-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.header-mob-socials-item {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  & + & {
+    margin-left: 16px;
+  }
+}
