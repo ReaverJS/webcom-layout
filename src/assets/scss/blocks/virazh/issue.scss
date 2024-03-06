@@ -1,0 +1,150 @@
+.issue {
+
+  &__inner {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #efefef;
+    padding:44px 80px;
+    border-radius: 20px;
+    margin-bottom: 150px;
+
+    @media (max-width:767.98px) {
+      text-align: center;
+      padding:32px;
+      margin-bottom: 100px;
+    }
+
+  }
+
+  &__wrapper {
+    display:flex;
+    flex-direction: row;
+
+    @media (max-width:767.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__about {
+    width:100%;
+    max-width:45%;
+
+    @media (max-width:767.98px) {
+      max-width:100%;
+    }
+  }
+
+  &__task {
+    width:100%;
+    max-width:50%;
+
+    @media (max-width:767.98px) {
+      max-width:100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+
+    @media (max-width:767.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info-text {
+    width:100%;
+    max-width:45%;
+
+    @media (max-width:767.98px) {
+      max-width:100%;
+    }
+  }
+
+  &__title {
+    font-size:54px;
+    line-height: 76px;
+    color:#0C272C;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+    @media (max-width:767.98px) {
+      font-size:32px;
+      line-height: 44px;
+    }
+  }
+
+  &__text {
+    font-size:21px;
+    line-height: 30px;
+    color:#001739;
+    margin-bottom: 30px;
+
+    @media (max-width:767.98px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__period {
+    font-size:21px;
+    line-height: 30px;
+    span {
+      font-weight: bold;
+    }
+
+    @media (max-width:767.98px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__tools {
+    font-size:21px;
+    line-height: 30px;
+    span {
+      font-weight: bold;
+    }
+
+    @media (max-width:767.98px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__disclaimer {
+    width:100%;
+    max-width:50%;
+    font-size:21px;
+    line-height: 30px;
+    font-weight: bold;
+    border-left: 3px solid #4CA8BF;
+    padding-left:28px;
+
+    span {
+      display:none;
+    }
+
+    @media (max-width:767.98px) {
+      max-width:100%;
+      border-left: none;
+      border-top: 3px solid #4CA8BF;
+      font-size: 16px;
+      line-height: 24px;
+      padding-left:0;
+      padding-top:24px;
+    }
+
+    span {
+      @media (max-width:767.98px) {
+        height: 2px;
+        margin-top:16px;
+        width:100%;
+        display: block;
+      }
+    }
+  }
+}
