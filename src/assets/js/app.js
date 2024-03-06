@@ -1,6 +1,8 @@
 AOS.init()
 
 // Slider
+
+
 var swiper = new Swiper(".news-swiper", {
   slidesPerView: 1,
   spaceBetween: 32,
