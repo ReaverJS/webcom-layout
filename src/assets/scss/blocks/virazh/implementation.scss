@@ -1,12 +1,11 @@
 .implementation {
   margin-bottom: 150px;
 
-  @media (min-width:767.98px) {
+  @media (min-width: 767.98px) {
     .swiper-wrapper {
       display: flex;
       flex-wrap: wrap;
-      background-color: #efefef;
-      padding:48px;
+      padding: 48px;
       justify-content: space-between;
       align-items: center;
     }
@@ -14,31 +13,32 @@
 
   &__swiper {
     margin-bottom: 0;
+    border-radius: 16px;
+    background-color: initial;
     @media (min-width: 767.98px) {
-      &__swiper {
-        width: 50%;
-        margin-bottom: 60px;
-      }
+      background-color: #efefef;
+      width: 100%;
+      margin-bottom: 60px;
     }
   }
 
   &__inner {
     margin-bottom: 60px;
-    @media (max-width:767.98px) {
+    @media (max-width: 767.98px) {
       margin-bottom: 40px;
     }
   }
 
   &__case {
-    display:flex;
+    display: flex;
     align-items: flex-start;
-    width:50%;
+    width: 50%;
     margin-bottom: 42px;
-    @media (max-width:767.98px) {
+    @media (max-width: 767.98px) {
       align-items: center;
-      width:100%;
+      width: 100%;
       flex-direction: column;
-      padding:32px;
+      padding: 32px;
       border-radius: 16px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 30px rgba(0, 0, 0, 0.1);
       margin-right: 16px;
@@ -55,9 +55,11 @@
   &__icon {
     margin-right: 16px;
 
-    @media (max-width:767.98px) {
+    @media (max-width: 767.98px) {
       margin-bottom: 20px;
       margin-right: 0;
+      width: 68px;
+      height: 68px;
     }
   }
 
@@ -79,11 +81,13 @@
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
-    width:100%;
-    max-width:70%;
-    @media (max-width:767.98px) {
+    width: 100%;
+    max-width: 70%;
+    @media (max-width: 767.98px) {
       width: 100%;
       text-align: center;
+      max-width: 100%;
+      font-size: 22px;
     }
   }
 
@@ -93,7 +97,7 @@
     justify-content: center;
     margin-top: 30px;
     @media (min-width: 767.98px) {
-      display:none;
+      display: none;
     }
   }
 

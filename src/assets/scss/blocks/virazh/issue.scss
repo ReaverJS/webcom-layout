@@ -21,6 +21,7 @@
   &__wrapper {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
 
     @media (max-width:767.98px) {
       flex-direction: column;
@@ -47,6 +48,7 @@
 
   &__info {
     display: flex;
+    justify-content: space-between;
 
     @media (max-width:767.98px) {
       flex-direction: column;
@@ -84,6 +86,20 @@
     @media (max-width:767.98px) {
       font-size: 16px;
       line-height: 24px;
+      text-wrap: balance;
+    }
+
+    span {
+      display: none;
+      @media (max-width:767.98px) {
+        display: block;
+      }
+    }
+  }
+
+  &__text.desktop {
+    @media (max-width:767.98px) {
+      display: none;
     }
   }
 
