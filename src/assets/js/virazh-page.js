@@ -15,7 +15,7 @@ let swiperSolution = new Swiper(".solution__swiper", {
     930: {
       grabCursor: false,
       slidesPerView: 3,
-      spaceBetween: 32,
+      spaceBetween: 0,
       loop: false,
       autoplay: false,
       centeredSlides: false,
