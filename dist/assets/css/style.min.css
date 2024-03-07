@@ -4094,7 +4094,7 @@ video::-webkit-media-controls {
 
 .virazh__info {
   width: 100%;
-  max-width: 35%;
+  max-width: 40%;
 }
 @media (max-width: 767.98px) {
   .virazh__info {
@@ -4141,6 +4141,8 @@ video::-webkit-media-controls {
     line-height: 34px;
     margin-bottom: 28px;
     text-wrap: balance;
+    width: 100%;
+    max-width: 80%;
   }
 }
 .virazh__text {
@@ -4185,16 +4187,19 @@ video::-webkit-media-controls {
 }
 .virazh__name span {
   font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 300;
 }
 .virazh__divider {
   height: 50px;
   width: 2px;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 39px;
 }
 @media (max-width: 767.98px) {
   .virazh__divider {
-    height: 2px;
+    height: 1px;
     width: 100%;
     margin: 10px 0;
   }
@@ -4364,6 +4369,7 @@ video::-webkit-media-controls {
     line-height: 24px;
     padding-left: 0;
     padding-top: 24px;
+    text-wrap: balance;
   }
 }
 @media (max-width: 767.98px) {
@@ -4375,6 +4381,11 @@ video::-webkit-media-controls {
   }
 }
 
+@media (max-width: 767.98px) {
+  .issue__text.mobile {
+    margin-bottom: 0;
+  }
+}
 .solution {
   margin-bottom: 150px;
 }
@@ -4518,7 +4529,7 @@ video::-webkit-media-controls {
 }
 .solution__info-text-title {
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 21px;
   line-height: 30px;
 }
@@ -4946,6 +4957,7 @@ video::-webkit-media-controls {
 .result__info-text {
   font-size: 21px;
   line-height: 30px;
+  text-wrap: balance;
 }
 @media (max-width: 767.98px) {
   .result__info-text {

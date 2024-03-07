@@ -97,6 +97,8 @@
     }
   }
 
+
+
   &__text.desktop {
     @media (max-width:767.98px) {
       display: none;
@@ -152,6 +154,7 @@
       line-height: 24px;
       padding-left:0;
       padding-top:24px;
+      text-wrap:balance;
     }
 
     span {
@@ -162,5 +165,11 @@
         display: block;
       }
     }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .issue__text.mobile {
+    margin-bottom: 0;
   }
 }
