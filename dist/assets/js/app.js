@@ -19,6 +19,16 @@ eval("AOS.init()\n\n// Slider\n\n\nvar swiper = new Swiper(\".news-swiper\", {\n
 
 /***/ }),
 
+/***/ "./src/assets/js/blog.js":
+/*!*******************************!*\
+  !*** ./src/assets/js/blog.js ***!
+  \*******************************/
+/***/ (function() {
+
+eval("let blogSwiper = new Swiper(\".card__swiper\", {\n  slidesPerView: 1,\n  spaceBetween: 32,\n  centeredSlides: true,\n  grabCursor: true,\n  loop: true,\n  autoplay: {\n    delay: 3000,\n  },\n  pagination: {\n    el: \".card__swiper-pagination\",\n    clickable: true,\n  },\n});\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/blog.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/burger.js":
 /*!*********************************!*\
   !*** ./src/assets/js/burger.js ***!
@@ -76,6 +86,7 @@ eval("let swiperSolution = new Swiper(\".solution__swiper\", {\n  slidesPerView:
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_modules__["./src/assets/js/app.js"]();
+/******/ 	__webpack_modules__["./src/assets/js/blog.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/burger.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/flipItems.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/modal.js"]();
