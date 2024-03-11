@@ -16,6 +16,7 @@ body {
 
 .page {
   overflow: hidden;
+  position: relative;
 
   @media(max-width: 930px) {
     padding-top: 90px;
@@ -102,3 +103,7 @@ body {
 @import "blocks/blog/intro.scss";
 @import "blocks/blog/card.scss";
 @import "blocks/blog/more.scss";
+
+// google
+@import "blocks/google/intro.scss";
+@import "blocks/google/main.scss";
