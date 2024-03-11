@@ -4096,9 +4096,14 @@ video::-webkit-media-controls {
   width: 100%;
   max-width: 40%;
 }
-@media (max-width: 1450px) {
+@media (max-width: 1600px) {
   .virazh__info {
     max-width: 35%;
+  }
+}
+@media (max-width: 1200px) {
+  .virazh__info {
+    max-width: 30%;
   }
 }
 @media (max-width: 767.98px) {
