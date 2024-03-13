@@ -59,6 +59,16 @@ eval("let kargoSwiper = new Swiper(\".task-solution__swiper\", {\n  slidesPerVie
 
 /***/ }),
 
+/***/ "./src/assets/js/letter.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/letter.js ***!
+  \*********************************/
+/***/ (function() {
+
+eval("let letterSwiper = new Swiper(\".letter__swiper\", {\n  slidesPerView: 1,\n  spaceBetween: 32,\n  centeredSlides: true,\n  grabCursor: true,\n  loop: true,\n  autoplay: {\n    delay: 3000,\n  },\n  pagination: {\n    el: \".letter__swiper-pagination\",\n    clickable: true,\n  },\n});\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/letter.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/modal.js":
 /*!********************************!*\
   !*** ./src/assets/js/modal.js ***!
@@ -100,6 +110,7 @@ eval("let swiperSolution = new Swiper(\".solution__swiper\", {\n  slidesPerView:
 /******/ 	__webpack_modules__["./src/assets/js/burger.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/flipItems.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/kargo.js"]();
+/******/ 	__webpack_modules__["./src/assets/js/letter.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/modal.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/sidebar.js"]();
 /******/ 	var __webpack_exports__ = {};
