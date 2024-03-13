@@ -3,7 +3,7 @@
 
   @media(max-width: 767.98px) {
     margin-top: 37px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   }
 
   &__mobile {
@@ -195,7 +195,7 @@
   &__info-text:first-child {
     margin-bottom: 30px;
     @media (max-width: 767.98px) {
-      margin-bottom: 0;
+      margin: 0;
     }
   }
 
