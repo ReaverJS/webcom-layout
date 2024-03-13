@@ -6089,6 +6089,7 @@ video::-webkit-media-controls {
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 28px;
+    text-wrap: balance;
   }
 }
 .dealer__text {
@@ -6511,4 +6512,294 @@ video::-webkit-media-controls {
 .letter__inner-mobile {
   box-shadow: 16.7664px 8.87631px 64.1066px rgba(15, 56, 123, 0.2);
   border-radius: 10px;
+}
+
+.issue-dealer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #efefef;
+  padding: 44px 80px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__inner {
+    text-align: center;
+    padding: 32px;
+    margin-bottom: 100px;
+  }
+}
+.issue-dealer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__wrapper {
+    flex-direction: column;
+  }
+}
+.issue-dealer__about {
+  width: 100%;
+  max-width: 45%;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__about {
+    max-width: 100%;
+  }
+}
+.issue-dealer__task {
+  width: 100%;
+  max-width: 50%;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__task {
+    max-width: 100%;
+  }
+}
+.issue-dealer__info {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__info {
+    flex-direction: column;
+  }
+}
+.issue-dealer__info-text {
+  width: 100%;
+  max-width: 45%;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__info-text {
+    max-width: 100%;
+  }
+}
+.issue-dealer__title {
+  font-size: 54px;
+  line-height: 76px;
+  color: #0C272C;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+.issue-dealer__text {
+  font-size: 21px;
+  line-height: 30px;
+  color: #001739;
+  margin-bottom: 30px;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-wrap: balance;
+  }
+}
+.issue-dealer__text span {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__text span {
+    display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__text.desktop {
+    display: none;
+  }
+}
+.issue-dealer__period {
+  font-size: 21px;
+  line-height: 30px;
+}
+.issue-dealer__period span {
+  font-weight: bold;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__period {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+}
+.issue-dealer__tools {
+  font-size: 21px;
+  line-height: 30px;
+}
+.issue-dealer__tools span {
+  font-weight: bold;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__tools {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+}
+.issue-dealer__disclaimer {
+  width: 100%;
+  max-width: 50%;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  border-left: 3px solid #4CA8BF;
+  padding-left: 28px;
+}
+.issue-dealer__disclaimer span {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__disclaimer {
+    max-width: 100%;
+    border-left: none;
+    border-top: 3px solid #4CA8BF;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 24px;
+    text-wrap: balance;
+  }
+}
+@media (max-width: 767.98px) {
+  .issue-dealer__disclaimer span {
+    height: 2px;
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .issue__text.mobile {
+    margin-bottom: 0;
+  }
+}
+.implementation-dealer {
+  margin-bottom: 150px;
+}
+@media (min-width: 767.98px) {
+  .implementation-dealer .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 48px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.implementation-dealer__swiper {
+  margin-bottom: 0;
+  border-radius: 16px;
+  background-color: initial;
+}
+@media (min-width: 767.98px) {
+  .implementation-dealer__swiper {
+    background-color: #efefef;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+.implementation-dealer__inner {
+  margin-bottom: 60px;
+}
+@media (max-width: 767.98px) {
+  .implementation-dealer__inner {
+    margin-bottom: 40px;
+  }
+}
+.implementation-dealer__case {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  margin-bottom: 42px;
+}
+@media (max-width: 767.98px) {
+  .implementation-dealer__case {
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin-right: 16px;
+    min-height: 350px;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+.implementation-dealer__case:last-child {
+  margin-bottom: 0;
+}
+.implementation-dealer__icon {
+  margin-right: 16px;
+}
+@media (max-width: 767.98px) {
+  .implementation-dealer__icon {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 68px;
+    height: 68px;
+  }
+}
+.implementation-dealer__title {
+  font-size: 54px;
+  line-height: 76px;
+  color: #0C272C;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+  .implementation-dealer__title {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+}
+.implementation-dealer__text {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 70%;
+}
+@media (max-width: 767.98px) {
+  .implementation-dealer__text {
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    font-size: 22px;
+  }
+}
+.implementation-dealer__swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media (min-width: 767.98px) {
+  .implementation-dealer__swiper-pagination {
+    display: none;
+  }
+}
+.implementation-dealer .swiper-pagination-bullet {
+  background: #82CDDF;
+  transition: all 0.1s linear;
+}
+.implementation-dealer .swiper-pagination-bullet-active {
+  height: 13px;
+  width: 13px;
+}
+@media (max-width: 930px) {
+  .implementation-dealer {
+    margin-top: 37px;
+  }
 }
