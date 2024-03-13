@@ -39,6 +39,16 @@ eval("const burger = document.getElementById('sidebarToggle');\nconst sidebar = 
 
 /***/ }),
 
+/***/ "./src/assets/js/dealer.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/dealer.js ***!
+  \*********************************/
+/***/ (function() {
+
+eval("let swiperSolution = new Swiper(\".solution__swiper\", {\n  slidesPerView: 1,\n  spaceBetween: 32,\n  centeredSlides: true,\n  grabCursor: true,\n  loop: true,\n  autoplay: {\n    delay: 3000,\n  },\n  pagination: {\n    el: \".solution__swiper-pagination\",\n    clickable: true,\n  },\n  breakpoints: {\n    930: {\n      grabCursor: false,\n      slidesPerView: 3,\n      spaceBetween: 0,\n      loop: false,\n      autoplay: false,\n      centeredSlides: false,\n    },\n  }\n});\n\nlet swiperImplementaion;\n\nfunction initSwiperImplementation() {\n  swiperImplementaion = new Swiper(\".implementation-dealer__swiper\", {\n    slidesPerView: 1,\n    spaceBetween: 32,\n    centeredSlides: true,\n    grabCursor: true,\n    loop: true,\n    autoplay: {\n      delay: 3000,\n    },\n    pagination: {\n      el: \".implementation-dealer__swiper-pagination\",\n      clickable: true,\n    },\n    breakpoints: {\n      930: {\n        grabCursor: false,\n        slidesPerView: 2,\n        spaceBetween: 32,\n        loop: false,\n        autoplay: false,\n        centeredSlides: false,\n      },\n    }\n  });\n}\n\nfunction checkSwiper() {\n  if (window.innerWidth <= 1024) {\n    if (!swiperImplementaion) {\n      initSwiperImplementation();\n    }\n  } else {\n    if (swiperImplementaion) {\n      swiperImplementaion.destroy(true, true);\n      swiperImplementaion = null;\n    }\n  }\n}\n\n// Проверка при инициализации\ncheckSwiper();\n\n// Обработчик для события изменения размера окна\nwindow.addEventListener('resize', function() {\n  checkSwiper();\n});\n\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/dealer.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/flipItems.js":
 /*!************************************!*\
   !*** ./src/assets/js/flipItems.js ***!
@@ -108,6 +118,7 @@ eval("let swiperSolution = new Swiper(\".solution__swiper\", {\n  slidesPerView:
 /******/ 	__webpack_modules__["./src/assets/js/app.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/blog.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/burger.js"]();
+/******/ 	__webpack_modules__["./src/assets/js/dealer.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/flipItems.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/kargo.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/letter.js"]();
