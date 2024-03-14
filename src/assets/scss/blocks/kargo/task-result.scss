@@ -1,0 +1,133 @@
+.task-result {
+  margin-bottom: 60px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:767.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 54px;
+    line-height: 76px;
+    color: #0C272C;
+    font-weight: bold;
+    margin-bottom: 32px;
+    @media (max-width: 767.98px) {
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+    }
+  }
+
+  &__inner {
+    width:100%;
+    max-width:35%;
+    @media (max-width:767.98px) {
+      max-width:100%;
+    }
+  }
+
+  &__info-wrapper {
+    @media (max-width:767.98px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    background-color: #82CDDF;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 400px;
+    margin: 30px 0;
+    @media (max-width:767.98px) {
+      max-width:45%;
+      flex-direction: column;
+      align-items: center;
+      min-height: 220px;
+      border-radius: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 30px;
+    @media (max-width: 767.98px) {
+      text-align: center;
+      font-size: 17px;
+      line-height: 24px;
+      text-wrap: balance;
+      width: 100%;
+      max-width: 95%;
+      margin: auto;
+    }
+  }
+
+  &__name {
+    font-size:33px;
+    line-height: 42px;
+    font-style: italic;
+    font-weight: 800;
+    @media (max-width:767.98px) {
+      font-size:32px;
+      line-height: 32px;
+    }
+  }
+
+  &__old {
+    font-size:24px;
+    line-height: 21px;
+    position: absolute;
+    top: 53%;
+    right:35%;
+    @media (max-width:767.98px) {
+      font-size:32px;
+      line-height: 32px;
+      font-style: italic;
+      font-weight: 800;
+      top: 34%;
+      right:43%;
+    }
+  }
+
+  &__old::after {
+    content: url('../../assets/images/kargo/arrow.svg');
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: -55%;
+    @media (max-width:767.98px) {
+      content: url('../../assets/images/kargo/arrow-mobile.svg');
+      top: 26%;
+      right:-53%;
+    }
+  }
+
+  &__new {
+    color:#001739;
+    font-size:36px;
+    line-height: 21px;
+    font-weight: 700;
+    @media (max-width:767.98px) {
+      font-size:52px;
+      line-height: 70px;
+      font-style: italic;
+    }
+  }
+
+  &__img {
+    width:100%;
+    max-width:60%;
+    @media (max-width:767.98px) {
+      max-width:100%;
+    }
+  }
+}

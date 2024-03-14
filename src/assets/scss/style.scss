@@ -16,6 +16,7 @@ body {
 
 .page {
   overflow: hidden;
+  position: relative;
 
   @media(max-width: 930px) {
     padding-top: 90px;
@@ -90,3 +91,37 @@ body {
 //reason
 @import "blocks/reason-intro.scss";
 @import "blocks/reasons-main.scss";
+
+// virazh
+@import "blocks/virazh/intro.scss";
+@import "blocks/virazh/issue.scss";
+@import "blocks/virazh/solution.scss";
+@import "blocks/virazh/implementation.scss";
+@import "blocks/virazh/result.scss";
+
+// blog
+@import "blocks/blog/intro.scss";
+@import "blocks/blog/card.scss";
+@import "blocks/blog/more.scss";
+
+// google
+@import "blocks/google/intro.scss";
+@import "blocks/google/main.scss";
+
+// kargo
+@import "blocks/kargo/intro.scss";
+@import "blocks/kargo/task.scss";
+@import "blocks/kargo/task-solution.scss";
+@import "blocks/kargo/task-result.scss";
+
+// dealer
+@import "blocks/dealerTT/intro.scss";
+@import "blocks/dealerTT/main.scss";
+
+// recommendations
+@import "blocks/recommendations/recommendations.scss";
+@import "blocks/recommendations/letter.scss";
+
+// dealer
+@import "blocks/dealer/dealer.scss";
+@import "blocks/dealer/implemenation-dealer.scss";
