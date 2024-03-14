@@ -186,16 +186,21 @@
 }
 
 .header-main-nav-item-submenu {
+  padding-top: 20px;
   position: absolute;
   padding: 16px;
   background: #fff;
   border-radius: 6px;
   width: 250px;
-  box-shadow: 0 2px 3px 0 rgba(189,189,189,.44);
-  bottom: -50px;
+  box-shadow: 0 2px 3px 2px rgba(189,189,189,.44);
   right: 0;
+  top: 100%;
   z-index: 1;
   display: none;
+  a {
+    display: block;
+    padding: 12px;
+  }
 }
 
 .header-main-cabinet {
