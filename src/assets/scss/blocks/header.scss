@@ -198,8 +198,15 @@
   z-index: 1;
   display: none;
   a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 12px;
+    img {
+      max-width: 20px;
+      object-fit: contain;
+      height: auto;
+    }
   }
 }
 

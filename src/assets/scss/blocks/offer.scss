@@ -145,6 +145,8 @@
   height: 350px;
   position: relative;
   transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
 }
 
 .offer-swiper-item-side {

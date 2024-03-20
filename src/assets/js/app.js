@@ -83,6 +83,7 @@ var swiper = new Swiper(".offer-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
+  centeredSlides: false,
   autoplay: {
     delay: 10000,
   },
