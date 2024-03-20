@@ -40,7 +40,7 @@ function initSwiperImplementation() {
       clickable: true,
     },
     breakpoints: {
-      930: {
+      768: {
         grabCursor: false,
         slidesPerView: 2,
         spaceBetween: 32,

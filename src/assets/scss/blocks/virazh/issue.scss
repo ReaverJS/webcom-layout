@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: flex-start;
     background: #efefef;
-    padding:44px 80px;
+    padding:40px;
     border-radius: 20px;
     margin-bottom: 150px;
 
@@ -65,8 +65,8 @@
   }
 
   &__title {
-    font-size:54px;
-    line-height: 76px;
+    font-size:44px;
+    line-height: 52px;
     color:#0C272C;
     font-weight: bold;
     margin-bottom: 25px;
@@ -78,8 +78,8 @@
   }
 
   &__text {
-    font-size:21px;
-    line-height: 30px;
+    font-size:18px;
+    line-height: 24px;
     color:#001739;
     margin-bottom: 30px;
 
@@ -106,8 +106,9 @@
   }
 
   &__period {
-    font-size:21px;
-    line-height: 30px;
+    font-size:18px;
+    line-height: 24px;
+    margin: 0 0 10px 0;
     span {
       font-weight: bold;
     }
@@ -120,8 +121,8 @@
   }
 
   &__tools {
-    font-size:21px;
-    line-height: 30px;
+    font-size:18px;
+    line-height: 24px;
     span {
       font-weight: bold;
     }
@@ -135,9 +136,10 @@
 
   &__disclaimer {
     width:100%;
+    height: fit-content;
     max-width:50%;
-    font-size:21px;
-    line-height: 30px;
+    font-size:18px;
+    line-height: 24px;
     font-weight: bold;
     border-left: 3px solid #4CA8BF;
     padding-left:28px;

@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: visible;
 
   img {
     display: block;
@@ -46,7 +47,20 @@
 
   @media(max-width: 930px) {
     height: 100px;
-    overflow: hidden;
+  }
+}
+
+@media (min-width: 930px) {
+  .trust-item {
+    visibility: hidden;
+  }
+
+  .trust-item.swiper-slide-active,
+  .trust-item.swiper-slide-active + .trust-item,
+  .trust-item.swiper-slide-active + .trust-item + .trust-item,
+  .trust-item.swiper-slide-active + .trust-item + .trust-item + .trust-item,
+  .trust-item.swiper-slide-active + .trust-item + .trust-item + .trust-item + .trust-item  {
+    visibility: visible;
   }
 }
 

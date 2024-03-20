@@ -19,8 +19,20 @@
   }
 }
 
+.reason-intro-bg {
+  position: absolute;
+  right: 0;
+  top: -225px;
+  opacity: 0.5;
+  @media(max-width: 930px) {
+    display: none;
+  }
+}
+
 .reason-intro-inner {
   padding: 115px 0 75px;
+  position: relative;
+  z-index: 2;
 
   @media(max-width: 930px) {
     padding: 60px 0;
@@ -47,7 +59,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px 42px;
-  
+
   @media(max-width: 1200px) {
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
@@ -63,7 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 315px;
+  min-height: 250px;
   border-radius: 22px;
   box-shadow: 0px 16px 38px 4.1px rgba(8,15,52,0.12);
 

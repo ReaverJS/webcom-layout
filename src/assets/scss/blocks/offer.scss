@@ -45,7 +45,7 @@
 
 .offer-card {
   position: relative;
-  height: 400px;
+  height: 300px;
   perspective: 1500px;
 }
 
@@ -80,8 +80,8 @@
 }
 
 .offer-card-img {
-  height: 159px;
-  width: 156px;
+  height: 130px;
+  width: 130px;
   object-fit: contain;
 
   &.transform {
@@ -90,11 +90,12 @@
 }
 
 .offer-card-title {
-  font-size: 45px;
-  line-height: 51px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+
   span {
     display: block;
-    font-weight: 700;
   }
 
   &.special {
@@ -107,10 +108,14 @@
 }
 
 .offer-card-text {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 35px;
   color: #000;
+}
+
+.offer-card-text br {
+  display: none;
 }
 
 .offer-card:hover .offer-card-front,.offer-card:focus .offer-card-front {

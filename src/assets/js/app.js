@@ -33,8 +33,8 @@ var swiper = new Swiper(".trust-swiper", {
   slidesPerView: 2,
   spaceBetween: 12,
   grabCursor: true,
-  loop: false,
-  slidesPerGroup: 2,
+  loop: true,
+  slidesPerGroup: 1,
   watchOverflow: true,
   autoplay: {
     delay: 5000,

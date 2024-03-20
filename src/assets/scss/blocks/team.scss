@@ -83,6 +83,8 @@
   font-size: 45px;
   font-weight: 700;
   line-height: 51px;
+  white-space: nowrap;
+
   @media(max-width: 930px) {
     margin-bottom: 10px;
     font-size: 24px;

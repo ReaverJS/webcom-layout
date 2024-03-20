@@ -15,6 +15,7 @@
 }
 
 .news-swiper {
+  overflow: hidden;
   @media(max-width: 930px) {
     position: relative;
   }

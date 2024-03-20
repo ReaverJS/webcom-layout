@@ -23,8 +23,13 @@
   }
 
   &__inner {
-    margin-bottom: 40px;
     display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin: 0 40px 0 0;
+    }
+
     @media (max-width: 767.98px) {
       margin-bottom: 40px;
     }
@@ -37,7 +42,7 @@
     max-width: 33%;
     @media (max-width: 767.98px) {
       flex-direction: column;
-      padding: 32px;
+      padding: 32px 16px;
       max-width: 100%;
       border-radius: 16px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -53,6 +58,7 @@
     align-items: center;
     width:100%;
     max-width: 1050px;
+    margin: 0 0 40px 0;
     @media (max-width: 767.98px) {
       display: none;
     }
@@ -63,19 +69,21 @@
   }
 
   &__icon {
-    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 
     @media (max-width: 767.98px) {
       margin-bottom: 20px;
       margin-right: 0;
-      height: 68px;
-      width: 68px;
+      height: 50px;
+      width: 50px;
     }
   }
 
   &__title {
-    font-size: 54px;
-    line-height: 76px;
+    font-size: 44px;
+    line-height: 52px;
     color: #0C272C;
     font-weight: bold;
     margin-bottom: 40px;
@@ -88,14 +96,15 @@
   }
 
   &__text {
-    font-size: 21px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: bold;
     max-width: 470px;
     @media (max-width: 767.98px) {
       width: 100%;
       text-align: center;
-      font-size: 22px;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 
@@ -127,6 +136,11 @@
     width: 100%;
     max-width: 40%;
 
+    @media (max-width: 1200px) {
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
     @media (max-width: 767.98px) {
       max-width: 100%;
       margin: 40px 0;
@@ -134,7 +148,7 @@
   }
 
   &__info-text-wrapper {
-    padding:80px 65px;
+    padding: 40px;
     background-color: #efefef;
     display: flex;
     align-items: flex-start;
@@ -155,8 +169,8 @@
   &__info-text-title {
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 21px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     @media (max-width: 767.98px) {
       font-size: 22px;
       line-height: 24px;
@@ -179,8 +193,8 @@
 
   &__info-text {
     width: 100%;
-    font-size:21px;
-    line-height: 30px;
+    font-size:18px;
+    line-height: 24px;
     @media (max-width: 767.98px) {
       max-width: 100%;
       margin-top: 24px;
