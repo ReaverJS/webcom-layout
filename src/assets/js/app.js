@@ -9,9 +9,9 @@ var swiper = new Swiper(".news-swiper", {
   centeredSlides: true,
   grabCursor: true,
   loop: false,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".news-swiper-pagination",
     clickable: true,
@@ -36,9 +36,9 @@ var swiper = new Swiper(".trust-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   breakpoints: {
     930: {
       slidesPerView: 5,
@@ -60,9 +60,9 @@ var swiper = new Swiper(".subtintro-swiper", {
   loop: false,
   slidesPerGroup: 3,
   watchOverflow: true,
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   breakpoints: {
     500: {
       slidesPerView: 3,
@@ -84,9 +84,9 @@ var swiper = new Swiper(".offer-swiper", {
   slidesPerGroup: 1,
   watchOverflow: true,
   centeredSlides: false,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".offer-swiper-pagination",
     clickable: true,
@@ -109,9 +109,9 @@ var swiper = new Swiper(".case-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".case-swiper-pagination",
     clickable: true,
@@ -129,9 +129,9 @@ var swiper = new Swiper(".plus-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".plus-swiper-pagination",
     clickable: true,
@@ -145,9 +145,9 @@ var swiper = new Swiper(".inovation-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".inovation-swiper-pagination",
     clickable: true,
@@ -161,9 +161,9 @@ var swiper = new Swiper(".persons-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   pagination: {
     el: ".persons-swiper-pagination",
     clickable: true,
@@ -177,9 +177,9 @@ var swiper = new Swiper(".reason-intro-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".reason-intro-swiper-pagination",
     clickable: true,
@@ -193,9 +193,9 @@ var swiper = new Swiper(".reasons-main-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".reasons-main-swiper-pagination",
     clickable: true,
@@ -209,9 +209,9 @@ var swiper = new Swiper(".services-cards-swiper", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".services-cards-swiper-pagination",
     clickable: true,
@@ -225,9 +225,9 @@ var swiper = new Swiper(".services-cards-swiper2", {
   loop: true,
   slidesPerGroup: 1,
   watchOverflow: true,
-  autoplay: {
-    delay: 10000,
-  },
+  // autoplay: {
+  //   delay: 10000,
+  // },
   pagination: {
     el: ".services-cards-swiper-pagination2",
     clickable: true,
@@ -258,3 +258,44 @@ function init() {
 }
 
 ymaps.ready(init)
+
+
+/* ============== intersection observe Swiper ============== */
+let allSlidesSelector = ".news-swiper, .subtintro-swiper, .offer-swiper, .trust-swiper, .case-swiper, .news-swiper"
+
+const observerSwiper = new IntersectionObserver(function (entries, self) {
+  entries.forEach(entry => {
+    let elid;
+    if (entry.isIntersecting) {
+      elid = entry.target.id;
+    }
+    if (elid) {
+      let elsSwiper = document.querySelectorAll(allSlidesSelector);
+      elsSwiper.forEach((e) => {
+        if (e.id === elid) {
+          // play this swiper
+          e.swiper.params.autoplay.delay = e.dataset?.swiperAutoplay ? e.dataset.swiperAutoplay : 3000;
+
+          e.swiper.autoplay.start();
+        } else {
+          // stop other swiper
+          e.swiper.autoplay.stop();
+        }
+      });
+    }
+  });
+}, {
+    root: null,
+    threshold: 0.75,
+    rootMargin: '0px'
+});
+
+/* ============== intersection observe Swiper: init ============== */
+const initOberverReveal = () => {
+  let elsSwiper = document.querySelectorAll(allSlidesSelector);
+
+  elsSwiper.forEach((el) => {
+    observerSwiper.observe(el);
+  });
+}
+window.addEventListener('load', initOberverReveal);
